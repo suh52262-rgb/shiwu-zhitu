@@ -35,6 +35,19 @@ def test_source_export_rejects_data_and_binary():
     with pytest.raises(ValueError):source.validate_entries({'data/video_runs/x/image.png':b'abc'},[],{})
     with pytest.raises(ValueError):source.validate_entries({'data/problems/private/problem.json':b'{}'},[],{})
     with pytest.raises(ValueError):source.validate_entries({'frontend/asset.bin':b'\0binary'},[],{})
+    image = b'\x89PNG\r\n\x1a\n\0synthetic-reviewed-unit-asset'
+    name = 'docs/assets/readme/portal.png'
+    rules = {'reviewed_binary_assets': [{'path': name, 'content_type': 'image/png',
+              'sha256': hashlib.sha256(image).hexdigest()}]}
+    assert source.validate_entries({name: image}, [], rules) == []
+    jpeg = b'\xff\xd8\xff\0synthetic-reviewed-jpeg'
+    jpeg_rules = {'reviewed_binary_assets': [{'path': name, 'content_type': 'image/jpeg',
+                   'sha256': hashlib.sha256(jpeg).hexdigest()}]}
+    assert source.validate_entries({name: jpeg}, [], jpeg_rules) == []
+    with pytest.raises(ValueError):source.validate_entries({name: image+b'changed'}, [], rules)
+    with pytest.raises(ValueError):source.validate_entries({'frontend/portal.png': image}, [], rules)
+    with pytest.raises(ValueError):source.validate_entries({name: image}, [b'synthetic-reviewed'], rules)
+
 
 
 def test_only_explicit_public_label_config_is_allowed():
@@ -96,3 +109,15 @@ def test_export_uses_exact_commit_not_dirty_or_untracked_files(tmp_path):
         assert hashlib.sha256((clean / name).read_bytes()).hexdigest() == record['sha256']
     with pytest.raises(ValueError, match='clean source directory'):
         source.build(root, tmp_path / 'other.zip', lock, source_ref=ref, directory=clean)
+    # New source packages retain the reviewed public front page and its vector asset.
+    public_readme = '# Public project front page\n'
+    (root / 'deployment/README.public.md').write_text(public_readme, encoding='utf8')
+    asset = root / 'docs/assets/readme/hero.svg'
+    asset.parent.mkdir(parents=True)
+    asset.write_text('<svg xmlns="http://www.w3.org/2000/svg"/>', encoding='utf8')
+    git('add', 'deployment/README.public.md', 'docs/assets/readme/hero.svg')
+    git('-c', 'user.name=Test', '-c', 'user.email=test@example.invalid', 'commit', '-qm', 'public docs')
+    second = tmp_path / 'public-clean'
+    source.build(root, tmp_path / 'public.zip', lock, directory=second)
+    assert (second / 'README.md').read_text(encoding='utf8') == public_readme
+    assert (second / 'docs/assets/readme/hero.svg').read_bytes() == asset.read_bytes()

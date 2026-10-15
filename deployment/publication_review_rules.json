@@ -49,5 +49,13 @@
       "value_fingerprint": "db84fbe87dd0d544",
       "reason": "Shared isolated teacher UI fixture; intentionally unreachable loopback DSN moved from test_app_db_mode.py. Not a production account."
     }
+  ],
+  "reviewed_binary_assets": [
+    {
+      "path": "docs/assets/readme/portal-overview.jpg",
+      "sha256": "faa38694fcb7d7660d183770bedb25ecaf3bfe7222079ef02718113d4c41fa82",
+      "content_type": "image/jpeg",
+      "provenance": "Actual static project portal; frontend/portal_app.py makes no API/database calls. AI visually inspected all visible content; no private student/textbook content. User authorized README presentation."
+    }
   ]
 }

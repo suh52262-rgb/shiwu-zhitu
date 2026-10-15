@@ -1,0 +1,24 @@
+{
+  "scope": "README assets, not student materials or model outputs",
+  "license": "Project-authored illustration/UI under AGPL-3.0-only; third-party UI components retain their own terms",
+  "assets": [
+    {
+      "file": "hero.svg",
+      "kind": "project-authored conceptual vector illustration",
+      "not_student_trajectory": true,
+      "sha256": "e3e3897271f2dc4243e1ef7d9b2e1faf498cdfa34e74141bb33ff082a2656179"
+    },
+    {
+      "file": "portal-overview.jpg",
+      "kind": "actual static portal screenshot",
+      "capture_date": "2026-10-15",
+      "private_student_or_textbook_content": false,
+      "review": "AI visual inspection of all visible elements; not a human publication certificate",
+      "source_files": {
+        "frontend/portal_app.py": "2f725b1054dafabe9f6e270c67d75bc07e998472a916a7dffcd6b7c4ba103ca5",
+        "frontend/portal.css": "966be6c3bd2c26f2bea8c8e24f3d315e4821d6899e46582cd2d4c55e1a0d3e87"
+      },
+      "sha256": "faa38694fcb7d7660d183770bedb25ecaf3bfe7222079ef02718113d4c41fa82"
+    }
+  ]
+}

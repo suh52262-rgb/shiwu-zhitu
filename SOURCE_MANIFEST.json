@@ -698,8 +698,8 @@
       "sha256": "80fc3d74285246b3afe5705aa83eae3e8632b24e6291a17fb8c74a528f1d9cbf"
     },
     "deployment/GitHub源码快速开始.md": {
-      "bytes": 4224,
-      "sha256": "02809f51b292d51650c99fd121fbf86552b9f060797daf03f73713196608f1c4"
+      "bytes": 1502,
+      "sha256": "db9bda248b60d75f814c43c171fb13daf8364824420a2ebce81d8e64da623578"
     },
     "deployment/Preflight.ps1": {
       "bytes": 700,
@@ -746,16 +746,16 @@
       "sha256": "d97c07350522435a5e2d3ad9836aad6bc7efb9e3f325a2229fadc896a705bd01"
     },
     "deployment/publication_review_rules.json": {
-      "bytes": 2161,
-      "sha256": "17d38e927c70366ebc2ae012cd6e014921faf470d04e6fbb22d8b8924b5234e1"
+      "bytes": 2605,
+      "sha256": "4758d7a5c4d4bae76c0bea9b00b022cec90a6bba462877f6ff1ec2ed464ce17a"
     },
     "deployment/requirements-windows-py311.lock.txt": {
       "bytes": 2177,
       "sha256": "b67d9a2cecd58c93df1a073c1ab9f122adfc6a6d13eadc0cb55f29795c050c94"
     },
     "deployment/source_bundle.py": {
-      "bytes": 9061,
-      "sha256": "1ef36162e7aa697ef9055247b0630207599dcb7487413240f266362219260ebf"
+      "bytes": 9851,
+      "sha256": "37492deaecd91e73e3b6a300df9e480105120b12c5aabf153e13a23256a81044"
     },
     "deployment/upgrade_bundle.py": {
       "bytes": 2300,
@@ -2434,8 +2434,8 @@
       "sha256": "70d443f439ee5d90db7f0e7e9d1682da0149ae261a54322b55658de829526d03"
     },
     "tests/test_source_candidate_guard.py": {
-      "bytes": 5086,
-      "sha256": "74aa96b51b546bd1736125bb7787181523c7570d168a5fb2da1b19feb0334f7d"
+      "bytes": 6839,
+      "sha256": "8ffbe698f3b7c2d5dcaf84244ddca1fad6fbeb2f11d7382db4ec140f6f74a694"
     },
     "tests/test_source_hygiene.py": {
       "bytes": 3748,
@@ -4006,12 +4006,28 @@
       "sha256": "b67d9a2cecd58c93df1a073c1ab9f122adfc6a6d13eadc0cb55f29795c050c94"
     },
     "README.md": {
-      "bytes": 4224,
-      "sha256": "02809f51b292d51650c99fd121fbf86552b9f060797daf03f73713196608f1c4"
+      "bytes": 10868,
+      "sha256": "43a6cbc0031027c5b27615ae4c9f54d1dbc607ecd43e4753b947a8ed7cf39204"
     },
     "deployment/源码发布说明.md": {
       "bytes": 2990,
       "sha256": "5a834e77d89ec15d49bd301a7b1e14204994e0172ad0a3b644c325d611b9295d"
+    },
+    "deployment/README.public.md": {
+      "bytes": 10868,
+      "sha256": "43a6cbc0031027c5b27615ae4c9f54d1dbc607ecd43e4753b947a8ed7cf39204"
+    },
+    "docs/assets/readme/hero.svg": {
+      "bytes": 2496,
+      "sha256": "e3e3897271f2dc4243e1ef7d9b2e1faf498cdfa34e74141bb33ff082a2656179"
+    },
+    "docs/assets/readme/portal-overview.jpg": {
+      "bytes": 61497,
+      "sha256": "faa38694fcb7d7660d183770bedb25ecaf3bfe7222079ef02718113d4c41fa82"
+    },
+    "docs/assets/readme/provenance.json": {
+      "bytes": 1037,
+      "sha256": "ea0344e5695af1d5918abe9d9aa1b4c768c6e1dc65dfaea20230e432687d1c95"
     }
   },
   "publication": {
@@ -4024,6 +4040,7 @@
     "local_offline_passed": 2501,
     "local_services_passed": 27,
     "remote_ci": "See Actions for the exact tested commit; not inferred from local tests",
-    "portability_fix": "Relative test paths and PowerShell Core test support; no business-code or model changes"
+    "portability_fix": "Relative test paths and PowerShell Core test support; no business-code or model changes",
+    "readme_update": "Blue-white project front page, inspected static portal screenshot, hint-level examples, root public README template and exact-path/hash asset export protection; no teaching/RAG changes"
   }
 }

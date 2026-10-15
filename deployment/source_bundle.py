@@ -17,6 +17,7 @@ PUBLIC_CONFIG = {'data/knowledge_vocabulary.json', 'data/document_names.json'}
 def validate_entries(entries, known, rules):
     reviewed={(r['path'],r['rule'],r['value_fingerprint']) for r in rules.get('reviewed_examples',[])}
     accepted=[]
+    assets={r["path"]:r for r in rules.get("reviewed_binary_assets",[])}
     for name,value in entries.items():
         if (Path(name).parts[0] in {'data','models','wheels','artifacts','output'} and name not in PUBLIC_CONFIG) or private_path(name):
             raise ValueError('Private/material path in source candidate: '+name)
@@ -38,7 +39,15 @@ def validate_entries(entries, known, rules):
                 raise ValueError('Invalid controlled vocabulary')
         result=scan_bytes(value,known=known)
         if result['content_status']!='text_scanned':
-            raise ValueError('Unreviewed binary/oversize source content: '+name)
+            asset = assets.get(name, {})
+            signature = {"image/png": b"\x89PNG\r\n\x1a\n", "image/jpeg": b"\xff\xd8\xff"}.get(asset.get("content_type"))
+            if (not name.startswith('docs/assets/readme/') or len(value) > 2*1024*1024
+                    or not signature or not value.startswith(signature)
+                    or asset.get('sha256') != hashlib.sha256(value).hexdigest()):
+                raise ValueError('Unreviewed binary/oversize source content: '+name)
+            if any(secret and secret in value for secret in known):
+                raise ValueError('Known local credential in reviewed asset: '+name)
+            continue
         for hit in result['findings']:
             identity=(name,hit['rule'],hit['value_fingerprint'])
             if hit['rule']=='known_local_credential' or identity not in reviewed:
@@ -70,7 +79,7 @@ def build(root, output, lock, *, source_ref='HEAD', directory=None):
                and not n.startswith('tests/fixtures/branch_merges/')
                and n not in {'scripts/_measure_stmt_quote.py', 'scripts/_run_miscon_eval.py'}]
     allowed += [n for n in sorted(PUBLIC_CONFIG) if n in tree]
-    allowed += [n for n in names if n.startswith('examples/public_demo/')]
+    allowed += [n for n in names if n.startswith(('examples/public_demo/', 'docs/assets/readme/'))]
     allowed += [n for n in names if n and Path(n).parts[0] == 'evaluation' and n.endswith('.py')]
     allowed += [n for n in names if n.endswith('.cmd') and '/' not in n]
     allowed += ['requirements.txt', 'pytest.ini', '.gitignore', 'THIRD_PARTY_NOTICES.md']
@@ -100,7 +109,8 @@ def build(root, output, lock, *, source_ref='HEAD', directory=None):
     entries['.env.example'] = blobs['deployment/.env.deploy.example']
     entries['docker-compose.yml'] = blobs['deployment/compose.yml']
     entries['requirements-deploy.lock.txt'] = Path(lock).read_bytes()
-    entries['README.md'] = blobs['deployment/GitHub源码快速开始.md']
+    readme_source = 'deployment/README.public.md' if 'deployment/README.public.md' in blobs else 'deployment/GitHub源码快速开始.md'
+    entries['README.md'] = blobs[readme_source]
     entries['.gitignore'] += b'\n# Source candidate: generated/local problem library stays private.\n/data/problems/\n'
     rules=json.loads(blobs['deployment/publication_review_rules.json'].decode('utf8'))
     accepted=validate_entries(entries,secrets,rules)
