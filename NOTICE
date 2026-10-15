@@ -1,0 +1,23 @@
+Shiwu-Zhitu / 视物知途
+SPDX-License-Identifier: AGPL-3.0-only
+
+Copyright (C) 2026 Shiwu-Zhitu contributors.
+Contributors retain their respective copyrights.
+
+The project's original source code and explicitly project-authored synthetic
+examples and regression fixtures are licensed under the GNU Affero General
+Public License, version 3 only. See LICENSE for the complete terms.
+There is no warranty, to the extent permitted by applicable law.
+
+Third-party components retain their own licenses and copyright notices.
+See THIRD_PARTY_NOTICES.md and third_party/ for retained license texts,
+version records and source hashes. This notice does not relicense them.
+
+Textbooks, external question banks and figures, user submissions, private
+videos, external model weights, logos and trademarks are not granted rights
+by this project notice unless explicitly identified otherwise. Generated
+user outputs are not automatically assigned a project license by this notice.
+
+Publishing or operating a modified version requires checking the applicable
+source-availability and notice obligations in LICENSE. No public repository
+or hosted service is claimed to exist merely by adding these license files.

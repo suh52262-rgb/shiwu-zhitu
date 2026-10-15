@@ -1,0 +1,20 @@
+{
+  "problem_id": "phy_002",
+  "metric": "graph_path_consistency",
+  "rounds": [
+    {
+      "id": "unit-g1",
+      "student_input": "先确定研究对象"
+    }
+  ],
+  "annotation": {
+    "status": "proposed",
+    "proposed_by": "AI synthetic regression fixture",
+    "reviewer": null,
+    "reviewed_at": null,
+    "review_source": null,
+    "graph_hash": "8c4b13c0df350117ebd11ece4217907b26d83c99bd93040a804efeec14d0d0ae",
+    "scope": "partial_touched_nodes"
+  },
+  "origin": "ai_authored_synthetic_test_fixture"
+}

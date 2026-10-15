@@ -1,0 +1,47 @@
+{
+  "problem_id": "phy_002",
+  "metric": "alternative_path_acceptance",
+  "origin": "ai_authored_synthetic_test_fixture",
+  "cases": [
+    {
+      "id": "unit-route-S6a",
+      "student_input": "使用一条允许的替代方法",
+      "problem_id": "phy_002",
+      "gold_nodes": [
+        "S6a"
+      ],
+      "annotation": {
+        "status": "proposed",
+        "proposed_by": "AI synthetic regression fixture",
+        "reviewer": null,
+        "reviewed_at": null,
+        "review_source": null,
+        "graph_hash": "8c4b13c0df350117ebd11ece4217907b26d83c99bd93040a804efeec14d0d0ae",
+        "scope": "partial_touched_nodes"
+      },
+      "expected": {
+        "correct": true
+      }
+    },
+    {
+      "id": "unit-route-S6b",
+      "student_input": "使用一条允许的替代方法",
+      "problem_id": "phy_002",
+      "gold_nodes": [
+        "S6b"
+      ],
+      "annotation": {
+        "status": "proposed",
+        "proposed_by": "AI synthetic regression fixture",
+        "reviewer": null,
+        "reviewed_at": null,
+        "review_source": null,
+        "graph_hash": "8c4b13c0df350117ebd11ece4217907b26d83c99bd93040a804efeec14d0d0ae",
+        "scope": "partial_touched_nodes"
+      },
+      "expected": {
+        "correct": true
+      }
+    }
+  ]
+}

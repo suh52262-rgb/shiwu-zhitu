@@ -1,0 +1,24 @@
+{
+  "problem_id": "phy_002",
+  "title": "P-Q弹簧流程（合成测试题）",
+  "statement": "仅作流程测试：P与Q组成理想弹簧系统，先分析接触约束，再在接触力为零时分离，之后重新选择研究对象。比较能量法与简谐运动法，并讨论最终运动距离。题图只是程序生成的测试占位符，不作为物理证据。",
+  "answer": "参考关系：合外力等于质量乘加速度。",
+  "figures": [
+    "figures/phy_002_fig1.png"
+  ],
+  "knowledge_points": [
+    "牛顿第二定律",
+    "胡克定律",
+    "机械能守恒条件",
+    "简谐运动",
+    "物体分离条件",
+    "动能定理"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions"
+  }
+}

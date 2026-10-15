@@ -1,0 +1,76 @@
+{
+  "problem_id": "public_force_01",
+  "nodes": [
+    {
+      "id": "S1",
+      "name": "明确方向与水平受力",
+      "type": "key_reasoning",
+      "description": "取向右为正，牵引力为+10.0 N，阻力为−2.0 N。竖直方向平衡。",
+      "knowledge_points": [
+        "受力分析",
+        "正方向约定"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2",
+      "name": "求水平合力",
+      "type": "calculation",
+      "description": "F合=10.0−2.0=8.0 N，方向向右；反向选轴并一致使用符号也可。",
+      "knowledge_points": [
+        "受力分析"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3",
+      "name": "由合力求加速度",
+      "type": "calculation",
+      "description": "a=F合/m=8.0/2.0=4.0 m/s²，向右。不可将10.0 N牵引力直接当合力。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S4",
+      "name": "求末速度并核对单位",
+      "type": "result",
+      "description": "由静止出发且合力恒定，v=at=4.0×3.0=12.0 m/s，向右。",
+      "knowledge_points": [
+        "匀加速直线运动"
+      ],
+      "common_errors": []
+    }
+  ],
+  "edges": [
+    [
+      "S1",
+      "S2"
+    ],
+    [
+      "S2",
+      "S3"
+    ],
+    [
+      "S3",
+      "S4"
+    ]
+  ],
+  "valid_paths": [
+    [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  ],
+  "metadata": {
+    "origin": "AI-authored for public-source demonstration, 2026-10-15",
+    "uses_private_material": false,
+    "human_review_status": "pending",
+    "not_student_research": true,
+    "needs_review": true,
+    "source": "AI自编；规则校验不等于教师批准"
+  }
+}

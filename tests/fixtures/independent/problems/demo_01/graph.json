@@ -1,0 +1,64 @@
+{
+  "problem_id": "demo_01",
+  "nodes": [
+    {
+      "id": "S1",
+      "name": "选定对象",
+      "type": "modeling",
+      "description": "选定对象",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2",
+      "name": "列方程",
+      "type": "key_reasoning",
+      "description": "列方程",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3",
+      "name": "计算并核对",
+      "type": "result",
+      "description": "a=8/2=4 m/s²，向右。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    }
+  ],
+  "edges": [
+    [
+      "S1",
+      "S2"
+    ],
+    [
+      "S2",
+      "S3"
+    ]
+  ],
+  "valid_paths": [
+    [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  ],
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions",
+    "needs_review": true,
+    "key_nodes": [],
+    "revision_provenance": {
+      "human_review_status": "pending",
+      "origin": "synthetic_fixture"
+    }
+  }
+}

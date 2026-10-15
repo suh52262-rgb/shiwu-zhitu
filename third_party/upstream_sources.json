@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "distribution": "langsmith",
+      "file": "licenses/langsmith/upstream-tag-LICENSE",
+      "url": "https://raw.githubusercontent.com/langchain-ai/langsmith-sdk/v0.14.1/LICENSE",
+      "sha256": "34e0b9842c7a31d34e53bc7eb224e81e07a34996106e029bbc72dea2d449f496"
+    },
+    {
+      "distribution": "pymupdf",
+      "file": "licenses/pymupdf/02-AGPL-3.0-only.txt",
+      "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/AGPL-3.0-only.txt",
+      "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+    },
+    {
+      "distribution": "streamlit",
+      "file": "licenses/streamlit/upstream-tag-LICENSE",
+      "url": "https://raw.githubusercontent.com/streamlit/streamlit/1.64.0/LICENSE",
+      "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c"
+    },
+    {
+      "distribution": "tokenizers",
+      "file": "licenses/tokenizers/upstream-tag-LICENSE",
+      "url": "https://raw.githubusercontent.com/huggingface/tokenizers/v0.23.2/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ]
+}

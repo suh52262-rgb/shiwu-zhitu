@@ -1,0 +1,83 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# 环境变量（含密钥，禁止提交）
+.env
+
+# 数据文件（教材 PDF 等大文件不入库，目录用 .gitkeep 占位）
+data/textbooks/*.pdf
+data/exams/*.pdf
+
+# 日志
+*.log
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+data/video_frames/
+# 视频分析的抽帧与导出结果（数百张 JPEG，纯生成物）
+data/video_runs/
+# 后台视频任务的**运行状态**（每个任务一个 JSON：状态/阶段/进度/结果）
+# ⚠️ 这是运行数据，不是源码 —— 我的一次探针跑完就留下 4 个文件，
+#    差点被当成代码提交（`data/video_runs/` 早就忽略了，这一条当时漏了）。
+data/video_jobs/
+data/photo_jobs/
+data/llm_circuits/
+data/teacher_media/
+
+# 本地交付、截图、PPT和临时构建；已跟踪历史文件另行审阅，不自动删除。
+/output/
+
+# 构建 / 运行产物（可由脚本重建，不入库）
+data/qdrant_local/
+_smoke*/
+
+# 工具与会话产物（非项目代码）
+.workbuddy/
+_acl_recovery/
+
+# 成员 B/C 交接的原始压缩包与其中的大文件
+# （教材单包数百 MB，绝不能进 git；解压后的教材 PDF 走上面 data/textbooks 规则）
+B用户交接/*.zip
+C用户交接/*.zip
+B用户交接/**/*.pdf
+
+# 导入产物（原图与裁出的插图）：是数据不是源码，不进版本库
+data/documents/
+
+# 评测报告：时间戳文件是生成物；latest-*.json 是基线，**入库**便于 diff
+evaluation/reports/*
+!evaluation/reports/latest-*.json
+!evaluation/reports/candidate-latest-*.json
+data/logs/
+artifacts/
+
+# 评审/复核 agent 的工作目录（临时产物，不进版本库）
+work_*/
+_review_*_tmp/
+# ⚠️ **改根因，不再逐个补**（2026-10-10，第三次同类事故）：
+#   前两次是 `work_a/`、`_review_b_tmp/`，这次是 `_review_batch3/` ——
+#   每次都是复核者自建目录名略有不同，规则就漏了。
+#   ⇒ 凡是**下划线/下划线 review 开头的临时目录**一律忽略，**不再依赖具体命名**。
+_*/
+_review*/
+work_*/
+# ⚠️ **第四次同类事故**（2026-10-11）：上面的 `_*/` **只匹配目录**，
+#   而复核者这次留的是**文件**：`_review_a_attr.py`、`_review_a_dump.py` …（7 个）✗
+#   ⇒ **目录规则和文件规则是两回事** —— 补文件模式，仍不依赖具体命名 ✓
+_*.py
+_*.json
+_*.txt
+_*.md
+_*.log
+# Python包入口不是临时脚本；干净源码仓库首次提交时也必须保留。
+!__init__.py
+
+# Source candidate: generated/local problem library stays private.
+/data/problems/

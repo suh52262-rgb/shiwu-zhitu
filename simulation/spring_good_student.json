@@ -1,0 +1,70 @@
+{
+  "case_id": "spring_good_student",
+  "title": "Case A 正常学生",
+  "profile": "基础扎实，基本沿标准解题路径推进，每步都给出关键推理。",
+  "notes": "任务书 P12 Case A。用于验证 Graph 路径稳定性：全程应走 S1→S2→S3→S4→S5→S6a→S7→S8→S9→S10→S11，且节点不漂移。",
+  "problem_id": "phy_002",
+  "student_id": "sim_good",
+  "steps": [
+    {
+      "input": "P、Q 开始时一起向右运动，可以把它们看成一个整体，总质量是 m1+m2。",
+      "idle_time": 6,
+      "note": "识别初始状态与共同运动阶段",
+      "expected": {"nodes": ["S1", "S2"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "P 只能推 Q 不能拉 Q，所以分离的临界条件是两者之间的接触力 N=0。",
+      "idle_time": 8,
+      "note": "给出分离条件（关键节点 S3）",
+      "expected": {"nodes": ["S3"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "分离前对 Q 用牛顿第二定律：N = m2·a；分离时 N=0，所以 a=0。",
+      "idle_time": 7,
+      "note": "单独分析 Q",
+      "expected": {"nodes": ["S4"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "共同运动阶段 a = -kx/(m1+m2)，由 a=0 得 x=0，即弹簧恢复原长时分离。",
+      "idle_time": 9,
+      "note": "定出分离位置（关键节点 S5）",
+      "expected": {"nodes": ["S5"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "用能量守恒：1/2·k·d² = 1/2·(m1+m2)·v²，得 v = d·√(k/(m1+m2))。",
+      "idle_time": 12,
+      "note": "能量法求分离速度（S6a）",
+      "expected": {"nodes": ["S6a", "S7"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "分离后 Q 不受水平力做匀速运动，振子系统只剩弹簧和 P，系统边界变了。",
+      "idle_time": 10,
+      "note": "识别分离后的新系统（关键节点 S8）",
+      "expected": {"nodes": ["S8"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "分离瞬间 P 在弹簧原长处，所以 x0=0，速度还是 v。",
+      "idle_time": 8,
+      "note": "确定 P 的新初始条件",
+      "expected": {"nodes": ["S9"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "由 1/2·k·A² = 1/2·m1·v²，得 A = d·√(m1/(m1+m2))。",
+      "idle_time": 14,
+      "note": "求 P 的新振幅",
+      "expected": {"nodes": ["S10"], "error": false, "complete": false, "hint_level": 0}
+    },
+    {
+      "input": "P 的简谐运动能量 E = 1/2·m1·v² = m1·k·d²/(2(m1+m2))，不是原来的 1/2·k·d²。",
+      "idle_time": 11,
+      "note": "求能量并收尾（终端节点 S11）",
+      "expected": {"nodes": ["S11"], "error": false, "complete": true, "hint_level": 0}
+    }
+  ],
+  "expected_summary": {
+    "finished": true,
+    "visited_path": ["S1", "S2", "S3", "S4", "S5", "S6a", "S7", "S8", "S9", "S10", "S11"],
+    "mistakes_min": 0,
+    "max_hint_level": 0
+  }
+}

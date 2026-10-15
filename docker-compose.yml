@@ -1,0 +1,28 @@
+name: shiwu-zhitu-deploy
+services:
+  postgres:
+    image: postgres:16-alpine@sha256:721873c34ceb9f8d8fc265984940dc982404c105f19ad51be9fdc5970a6080ea
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-shiwu}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-shiwu_demo_local}
+      POSTGRES_DB: ${POSTGRES_DB:-shiwu_zhitu_demo}
+    ports:
+      - "127.0.0.1:${DEPLOY_POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  qdrant:
+    image: qdrant/qdrant:v1.12.4@sha256:241edb9d7778327516ef218f8c74e1bd61b5ea42cd4f193cb8d0896199705636
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${DEPLOY_QDRANT_PORT:-6333}:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+volumes:
+  pgdata:
+  qdrant_data:

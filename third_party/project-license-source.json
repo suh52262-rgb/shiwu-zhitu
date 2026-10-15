@@ -1,0 +1,8 @@
+{
+  "spdx": "AGPL-3.0-only",
+  "source_url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/AGPL-3.0-only.txt",
+  "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee",
+  "bytes": 34020,
+  "selection": "explicit project maintainer instruction in this session; no commercial license purchased",
+  "scope": "project original source; third-party materials retain their licenses"
+}

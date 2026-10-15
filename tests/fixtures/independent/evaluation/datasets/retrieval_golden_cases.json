@@ -1,0 +1,3006 @@
+{
+  "origin": "ai_authored_synthetic_test_fixture",
+  "purpose": "300-row schema/identity stress fixture; NOT a retrieval quality benchmark or a real indexed textbook",
+  "cases": [
+    {
+      "id": "unit-gold-001",
+      "query": "测试编号1：质量2kg的物体受合力2N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "43690bdf-0c3f-5f98-bc4e-f6724ac150ad",
+        "text": "自编测试事实1：由F=ma，F=2N且m=2kg时，a=1m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-002",
+      "query": "测试编号2：质量2kg的物体受合力4N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "f623a201-ef80-598a-a708-ba5d86e13f0b",
+        "text": "自编测试事实2：由F=ma，F=4N且m=2kg时，a=2m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-003",
+      "query": "测试编号3：质量2kg的物体受合力6N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "4cbdb2fd-9476-52db-a57a-b2c84bf4d31c",
+        "text": "自编测试事实3：由F=ma，F=6N且m=2kg时，a=3m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-004",
+      "query": "测试编号4：质量2kg的物体受合力8N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "0b35ed7c-7b2d-5eb5-aa00-3eaf7561405f",
+        "text": "自编测试事实4：由F=ma，F=8N且m=2kg时，a=4m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-005",
+      "query": "测试编号5：质量2kg的物体受合力10N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "134a878f-4c6a-5a75-95fd-922ec624c6d2",
+        "text": "自编测试事实5：由F=ma，F=10N且m=2kg时，a=5m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-006",
+      "query": "测试编号6：质量2kg的物体受合力12N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "a9fa6547-4a0d-54bc-aeff-d4a3121667ad",
+        "text": "自编测试事实6：由F=ma，F=12N且m=2kg时，a=6m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-007",
+      "query": "测试编号7：质量2kg的物体受合力14N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "dfb944b9-751e-5e9e-a3df-be9ae890a29a",
+        "text": "自编测试事实7：由F=ma，F=14N且m=2kg时，a=7m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-008",
+      "query": "测试编号8：质量2kg的物体受合力16N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "ede6599f-e819-5cbc-ad05-1e0578740a22",
+        "text": "自编测试事实8：由F=ma，F=16N且m=2kg时，a=8m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-009",
+      "query": "测试编号9：质量2kg的物体受合力18N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "8262fe9e-0da1-5db1-9693-10da684b69d0",
+        "text": "自编测试事实9：由F=ma，F=18N且m=2kg时，a=9m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-010",
+      "query": "测试编号10：质量2kg的物体受合力20N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "b94dbd9f-b79e-58f8-8c64-9b372f71f9cc",
+        "text": "自编测试事实10：由F=ma，F=20N且m=2kg时，a=10m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-011",
+      "query": "测试编号11：质量2kg的物体受合力22N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "34ef20e8-25ce-550c-a797-d8ee5e8e4754",
+        "text": "自编测试事实11：由F=ma，F=22N且m=2kg时，a=11m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-012",
+      "query": "测试编号12：质量2kg的物体受合力24N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "8d43c8f0-ae4f-56f9-9cd1-7486d1b8b6fb",
+        "text": "自编测试事实12：由F=ma，F=24N且m=2kg时，a=12m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-013",
+      "query": "测试编号13：质量2kg的物体受合力26N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "dc0da3a4-488a-5189-b34e-a035d5851ef2",
+        "text": "自编测试事实13：由F=ma，F=26N且m=2kg时，a=13m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-014",
+      "query": "测试编号14：质量2kg的物体受合力28N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "af9c1581-3c1b-5a06-a39c-0689d4b41dfb",
+        "text": "自编测试事实14：由F=ma，F=28N且m=2kg时，a=14m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-015",
+      "query": "测试编号15：质量2kg的物体受合力30N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "b8bbf0ac-caa6-50c4-a705-928d36037918",
+        "text": "自编测试事实15：由F=ma，F=30N且m=2kg时，a=15m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-016",
+      "query": "测试编号16：质量2kg的物体受合力32N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "995250ce-d075-55b0-9ede-9f8eba81567b",
+        "text": "自编测试事实16：由F=ma，F=32N且m=2kg时，a=16m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-017",
+      "query": "测试编号17：质量2kg的物体受合力34N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "2e80716e-1806-5670-8172-7bae0d2169b4",
+        "text": "自编测试事实17：由F=ma，F=34N且m=2kg时，a=17m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-018",
+      "query": "测试编号18：质量2kg的物体受合力36N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "876fd888-d90a-5eb9-8d70-dbc1c0b65923",
+        "text": "自编测试事实18：由F=ma，F=36N且m=2kg时，a=18m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-019",
+      "query": "测试编号19：质量2kg的物体受合力38N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "01c340bb-a8b9-5cb0-ad98-35dc03b30e38",
+        "text": "自编测试事实19：由F=ma，F=38N且m=2kg时，a=19m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-020",
+      "query": "测试编号20：质量2kg的物体受合力40N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 1,
+        "block_id": "213c23f6-b8ae-595b-98d7-f08fdc90b2ca",
+        "text": "自编测试事实20：由F=ma，F=40N且m=2kg时，a=20m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-021",
+      "query": "测试编号21：质量2kg的物体受合力42N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "f896a17e-6763-5c15-9b02-5111dcd8bdb4",
+        "text": "自编测试事实21：由F=ma，F=42N且m=2kg时，a=21m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-022",
+      "query": "测试编号22：质量2kg的物体受合力44N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "ce36e533-d560-523a-a8c6-920240fc8329",
+        "text": "自编测试事实22：由F=ma，F=44N且m=2kg时，a=22m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-023",
+      "query": "测试编号23：质量2kg的物体受合力46N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "25d64ed9-3cab-5510-9235-cf2c72de2cc9",
+        "text": "自编测试事实23：由F=ma，F=46N且m=2kg时，a=23m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-024",
+      "query": "测试编号24：质量2kg的物体受合力48N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "97070c83-7826-59a1-8dfb-0b5ffc6f18a4",
+        "text": "自编测试事实24：由F=ma，F=48N且m=2kg时，a=24m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-025",
+      "query": "测试编号25：质量2kg的物体受合力50N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "0ff10e1e-6d2e-534d-9c88-85ef4eac33b7",
+        "text": "自编测试事实25：由F=ma，F=50N且m=2kg时，a=25m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-026",
+      "query": "测试编号26：质量2kg的物体受合力52N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "3afd8f56-de24-595d-84bd-c6f955a6d036",
+        "text": "自编测试事实26：由F=ma，F=52N且m=2kg时，a=26m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-027",
+      "query": "测试编号27：质量2kg的物体受合力54N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "09614815-9ae5-5ae1-ba84-e17e5745391d",
+        "text": "自编测试事实27：由F=ma，F=54N且m=2kg时，a=27m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-028",
+      "query": "测试编号28：质量2kg的物体受合力56N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "d1c0899b-8c50-5461-839e-e9152aee61ec",
+        "text": "自编测试事实28：由F=ma，F=56N且m=2kg时，a=28m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-029",
+      "query": "测试编号29：质量2kg的物体受合力58N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "45c7f590-0558-5a0e-8c69-1bcd7b36a4b2",
+        "text": "自编测试事实29：由F=ma，F=58N且m=2kg时，a=29m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-030",
+      "query": "测试编号30：质量2kg的物体受合力60N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "e31a6552-5b5a-56e2-90cd-cf5214e01adb",
+        "text": "自编测试事实30：由F=ma，F=60N且m=2kg时，a=30m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-031",
+      "query": "测试编号31：质量2kg的物体受合力62N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "f70d36ad-9276-528c-82e0-1a7d90a603e1",
+        "text": "自编测试事实31：由F=ma，F=62N且m=2kg时，a=31m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-032",
+      "query": "测试编号32：质量2kg的物体受合力64N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "5b277744-4e69-5d58-8f49-f9d19642becc",
+        "text": "自编测试事实32：由F=ma，F=64N且m=2kg时，a=32m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-033",
+      "query": "测试编号33：质量2kg的物体受合力66N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "a991938a-57ed-5220-b754-f04f7760daf0",
+        "text": "自编测试事实33：由F=ma，F=66N且m=2kg时，a=33m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-034",
+      "query": "测试编号34：质量2kg的物体受合力68N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "5fb1ac99-84f4-569f-b152-cd6d52648247",
+        "text": "自编测试事实34：由F=ma，F=68N且m=2kg时，a=34m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-035",
+      "query": "测试编号35：质量2kg的物体受合力70N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "9fefb952-9cc0-5068-9cf4-3aeab9151a42",
+        "text": "自编测试事实35：由F=ma，F=70N且m=2kg时，a=35m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-036",
+      "query": "测试编号36：质量2kg的物体受合力72N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "86dd60e1-b378-5c60-9e70-1e2d7d4e68fd",
+        "text": "自编测试事实36：由F=ma，F=72N且m=2kg时，a=36m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-037",
+      "query": "测试编号37：质量2kg的物体受合力74N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "d5029ad6-f4fd-5e71-b5bd-492c43d2a52d",
+        "text": "自编测试事实37：由F=ma，F=74N且m=2kg时，a=37m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-038",
+      "query": "测试编号38：质量2kg的物体受合力76N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "b3bc3865-3e0a-594a-a8ee-94f000946f3b",
+        "text": "自编测试事实38：由F=ma，F=76N且m=2kg时，a=38m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-039",
+      "query": "测试编号39：质量2kg的物体受合力78N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "532b8f83-8873-5425-8cde-8c312ba7477c",
+        "text": "自编测试事实39：由F=ma，F=78N且m=2kg时，a=39m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-040",
+      "query": "测试编号40：质量2kg的物体受合力80N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 2,
+        "block_id": "664bc17c-710a-50e7-bcac-6f76656ec29a",
+        "text": "自编测试事实40：由F=ma，F=80N且m=2kg时，a=40m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-041",
+      "query": "测试编号41：质量2kg的物体受合力82N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "98d7c46d-145b-503e-bb17-fad2e5e8a573",
+        "text": "自编测试事实41：由F=ma，F=82N且m=2kg时，a=41m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-042",
+      "query": "测试编号42：质量2kg的物体受合力84N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "fdb71841-17d3-5457-90c1-ce60f5cf1bb0",
+        "text": "自编测试事实42：由F=ma，F=84N且m=2kg时，a=42m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-043",
+      "query": "测试编号43：质量2kg的物体受合力86N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "4e6c81d6-6c36-5c3f-8df9-9e4692248fba",
+        "text": "自编测试事实43：由F=ma，F=86N且m=2kg时，a=43m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-044",
+      "query": "测试编号44：质量2kg的物体受合力88N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "eb292025-e5ba-549c-a0d5-a9335abed12b",
+        "text": "自编测试事实44：由F=ma，F=88N且m=2kg时，a=44m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-045",
+      "query": "测试编号45：质量2kg的物体受合力90N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "d62066b4-fddb-551f-bc56-c2c72662ce3b",
+        "text": "自编测试事实45：由F=ma，F=90N且m=2kg时，a=45m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-046",
+      "query": "测试编号46：质量2kg的物体受合力92N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "5c96cc44-ccef-5af0-af75-5247aa142e02",
+        "text": "自编测试事实46：由F=ma，F=92N且m=2kg时，a=46m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-047",
+      "query": "测试编号47：质量2kg的物体受合力94N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "1a6dee41-d4ff-5fe9-b379-2abc62b275d0",
+        "text": "自编测试事实47：由F=ma，F=94N且m=2kg时，a=47m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-048",
+      "query": "测试编号48：质量2kg的物体受合力96N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "dfb4b3b6-482d-527d-9df8-d2e33e2637aa",
+        "text": "自编测试事实48：由F=ma，F=96N且m=2kg时，a=48m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-049",
+      "query": "测试编号49：质量2kg的物体受合力98N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "bd76d304-3ae3-58c1-88f0-ee2e5fc668ec",
+        "text": "自编测试事实49：由F=ma，F=98N且m=2kg时，a=49m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-050",
+      "query": "测试编号50：质量2kg的物体受合力100N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "99ecf7b8-837b-5427-9c26-5084c8f6c0d8",
+        "text": "自编测试事实50：由F=ma，F=100N且m=2kg时，a=50m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-051",
+      "query": "测试编号51：质量2kg的物体受合力102N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "55637ce1-1f66-5843-8364-beffa107dda5",
+        "text": "自编测试事实51：由F=ma，F=102N且m=2kg时，a=51m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-052",
+      "query": "测试编号52：质量2kg的物体受合力104N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "4244ba84-0619-5641-8c74-1874b81cd027",
+        "text": "自编测试事实52：由F=ma，F=104N且m=2kg时，a=52m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-053",
+      "query": "测试编号53：质量2kg的物体受合力106N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "9644a8b6-4b0e-541b-bcba-6b4a205fe438",
+        "text": "自编测试事实53：由F=ma，F=106N且m=2kg时，a=53m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-054",
+      "query": "测试编号54：质量2kg的物体受合力108N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "c351f5e9-3ba4-5adb-b058-1c4b3a41eb4d",
+        "text": "自编测试事实54：由F=ma，F=108N且m=2kg时，a=54m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-055",
+      "query": "测试编号55：质量2kg的物体受合力110N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "4de883aa-9ebd-54d4-8ed1-57d85ab5776b",
+        "text": "自编测试事实55：由F=ma，F=110N且m=2kg时，a=55m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-056",
+      "query": "测试编号56：质量2kg的物体受合力112N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "ef7d6d50-57fe-5cd6-8d2d-1adc65838160",
+        "text": "自编测试事实56：由F=ma，F=112N且m=2kg时，a=56m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-057",
+      "query": "测试编号57：质量2kg的物体受合力114N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "d2dfa40b-ce9d-5eff-8e9b-81996d4ba076",
+        "text": "自编测试事实57：由F=ma，F=114N且m=2kg时，a=57m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-058",
+      "query": "测试编号58：质量2kg的物体受合力116N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "2d4dfc9c-1e75-58da-80ff-40a552eae436",
+        "text": "自编测试事实58：由F=ma，F=116N且m=2kg时，a=58m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-059",
+      "query": "测试编号59：质量2kg的物体受合力118N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "af8d163f-d41b-50c1-bb33-ca24db27f805",
+        "text": "自编测试事实59：由F=ma，F=118N且m=2kg时，a=59m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-060",
+      "query": "测试编号60：质量2kg的物体受合力120N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 3,
+        "block_id": "68f3074e-20bc-5aa6-b951-408bf8f6557b",
+        "text": "自编测试事实60：由F=ma，F=120N且m=2kg时，a=60m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-061",
+      "query": "测试编号61：质量2kg的物体受合力122N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "860543b1-ff17-5f45-a01f-fe863f7db68f",
+        "text": "自编测试事实61：由F=ma，F=122N且m=2kg时，a=61m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-062",
+      "query": "测试编号62：质量2kg的物体受合力124N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "e126a79a-8c88-510a-8bea-1114d6a91516",
+        "text": "自编测试事实62：由F=ma，F=124N且m=2kg时，a=62m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-063",
+      "query": "测试编号63：质量2kg的物体受合力126N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "613e7bdb-d31f-59f7-8a51-51209733d5f9",
+        "text": "自编测试事实63：由F=ma，F=126N且m=2kg时，a=63m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-064",
+      "query": "测试编号64：质量2kg的物体受合力128N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "b41c1265-bacb-54ea-8194-9f3561db6d46",
+        "text": "自编测试事实64：由F=ma，F=128N且m=2kg时，a=64m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-065",
+      "query": "测试编号65：质量2kg的物体受合力130N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "71b791c6-0295-596b-a06d-b879a76ca6c2",
+        "text": "自编测试事实65：由F=ma，F=130N且m=2kg时，a=65m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-066",
+      "query": "测试编号66：质量2kg的物体受合力132N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "ad599840-7fcb-556a-a542-4034fa395f2d",
+        "text": "自编测试事实66：由F=ma，F=132N且m=2kg时，a=66m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-067",
+      "query": "测试编号67：质量2kg的物体受合力134N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "50a5ba10-4b0d-5ab7-a63e-b5d27295245b",
+        "text": "自编测试事实67：由F=ma，F=134N且m=2kg时，a=67m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-068",
+      "query": "测试编号68：质量2kg的物体受合力136N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "c7dc2103-6957-533a-98bb-ae3f9fd39c98",
+        "text": "自编测试事实68：由F=ma，F=136N且m=2kg时，a=68m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-069",
+      "query": "测试编号69：质量2kg的物体受合力138N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "020036ef-9fde-5618-92e6-d0d100f1dbb0",
+        "text": "自编测试事实69：由F=ma，F=138N且m=2kg时，a=69m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-070",
+      "query": "测试编号70：质量2kg的物体受合力140N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "15057d62-f1f5-559b-a801-d680b6364087",
+        "text": "自编测试事实70：由F=ma，F=140N且m=2kg时，a=70m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-071",
+      "query": "测试编号71：质量2kg的物体受合力142N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "fcd6b571-e8f8-5332-a0a1-e55f95d42d8c",
+        "text": "自编测试事实71：由F=ma，F=142N且m=2kg时，a=71m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-072",
+      "query": "测试编号72：质量2kg的物体受合力144N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "c2d1afc4-be90-5e46-b19d-3713733ca483",
+        "text": "自编测试事实72：由F=ma，F=144N且m=2kg时，a=72m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-073",
+      "query": "测试编号73：质量2kg的物体受合力146N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "a0cdd445-e309-5f11-ac7a-f0d5a5dab6aa",
+        "text": "自编测试事实73：由F=ma，F=146N且m=2kg时，a=73m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-074",
+      "query": "测试编号74：质量2kg的物体受合力148N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "79c340e1-71e1-5933-bd31-8d624ab8e45e",
+        "text": "自编测试事实74：由F=ma，F=148N且m=2kg时，a=74m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-075",
+      "query": "测试编号75：质量2kg的物体受合力150N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "c2fa3b29-b852-5fbb-be0a-b4b7e5755ca5",
+        "text": "自编测试事实75：由F=ma，F=150N且m=2kg时，a=75m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-076",
+      "query": "测试编号76：质量2kg的物体受合力152N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "aaffa124-b184-5065-a179-167efa5a8c9d",
+        "text": "自编测试事实76：由F=ma，F=152N且m=2kg时，a=76m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-077",
+      "query": "测试编号77：质量2kg的物体受合力154N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "1f96bf3a-da61-5a63-8c38-0c413c8d12cf",
+        "text": "自编测试事实77：由F=ma，F=154N且m=2kg时，a=77m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-078",
+      "query": "测试编号78：质量2kg的物体受合力156N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "218d9957-d1dd-58d4-baba-f82a10a02e8d",
+        "text": "自编测试事实78：由F=ma，F=156N且m=2kg时，a=78m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-079",
+      "query": "测试编号79：质量2kg的物体受合力158N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "a56f98d3-7f17-5546-9471-6aa90b2057ba",
+        "text": "自编测试事实79：由F=ma，F=158N且m=2kg时，a=79m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-080",
+      "query": "测试编号80：质量2kg的物体受合力160N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 4,
+        "block_id": "737354fa-1bfd-5d90-9d41-7a37826902a3",
+        "text": "自编测试事实80：由F=ma，F=160N且m=2kg时，a=80m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-081",
+      "query": "测试编号81：质量2kg的物体受合力162N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "2d71ac95-c578-54bd-8ce1-0096ffc830f7",
+        "text": "自编测试事实81：由F=ma，F=162N且m=2kg时，a=81m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-082",
+      "query": "测试编号82：质量2kg的物体受合力164N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "a34921c8-3fe1-585d-bb87-1efa26dba9f2",
+        "text": "自编测试事实82：由F=ma，F=164N且m=2kg时，a=82m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-083",
+      "query": "测试编号83：质量2kg的物体受合力166N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "3b13b776-b604-5209-9ac7-7fa7ecef5b7c",
+        "text": "自编测试事实83：由F=ma，F=166N且m=2kg时，a=83m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-084",
+      "query": "测试编号84：质量2kg的物体受合力168N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "ce919f8b-8280-5ea4-8ccd-de2ea68e9241",
+        "text": "自编测试事实84：由F=ma，F=168N且m=2kg时，a=84m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-085",
+      "query": "测试编号85：质量2kg的物体受合力170N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "e1939e6a-38ab-597b-84bd-f040f361992b",
+        "text": "自编测试事实85：由F=ma，F=170N且m=2kg时，a=85m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-086",
+      "query": "测试编号86：质量2kg的物体受合力172N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "75782337-0570-50e1-8575-5befc026ae14",
+        "text": "自编测试事实86：由F=ma，F=172N且m=2kg时，a=86m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-087",
+      "query": "测试编号87：质量2kg的物体受合力174N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "692ec13d-bbce-596c-a469-422a291af4d0",
+        "text": "自编测试事实87：由F=ma，F=174N且m=2kg时，a=87m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-088",
+      "query": "测试编号88：质量2kg的物体受合力176N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "d4afd27b-51e9-5305-a4d6-95193080a4d7",
+        "text": "自编测试事实88：由F=ma，F=176N且m=2kg时，a=88m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-089",
+      "query": "测试编号89：质量2kg的物体受合力178N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "d7561c75-8487-558e-9c2c-3fd6e13178be",
+        "text": "自编测试事实89：由F=ma，F=178N且m=2kg时，a=89m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-090",
+      "query": "测试编号90：质量2kg的物体受合力180N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "451ec4f2-510a-5491-a5ba-cc6dd3661cf7",
+        "text": "自编测试事实90：由F=ma，F=180N且m=2kg时，a=90m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-091",
+      "query": "测试编号91：质量2kg的物体受合力182N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "999124f3-c3d9-5d23-b85b-0ae4a87af5ba",
+        "text": "自编测试事实91：由F=ma，F=182N且m=2kg时，a=91m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-092",
+      "query": "测试编号92：质量2kg的物体受合力184N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "52b96258-149a-57e9-bce1-07e9a8303bae",
+        "text": "自编测试事实92：由F=ma，F=184N且m=2kg时，a=92m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-093",
+      "query": "测试编号93：质量2kg的物体受合力186N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "625ecf3e-ba23-5f56-a758-fa01f0956ac2",
+        "text": "自编测试事实93：由F=ma，F=186N且m=2kg时，a=93m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-094",
+      "query": "测试编号94：质量2kg的物体受合力188N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "dc33b68f-0878-55cc-a468-4733b9f164d4",
+        "text": "自编测试事实94：由F=ma，F=188N且m=2kg时，a=94m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-095",
+      "query": "测试编号95：质量2kg的物体受合力190N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "29e4942e-d934-5cd3-bf3d-b8562d2fb752",
+        "text": "自编测试事实95：由F=ma，F=190N且m=2kg时，a=95m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-096",
+      "query": "测试编号96：质量2kg的物体受合力192N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "7715b42c-c88e-56d2-b4b0-617bffae2193",
+        "text": "自编测试事实96：由F=ma，F=192N且m=2kg时，a=96m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-097",
+      "query": "测试编号97：质量2kg的物体受合力194N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "a2f86929-bd18-54ff-8c09-ca9b39f89361",
+        "text": "自编测试事实97：由F=ma，F=194N且m=2kg时，a=97m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-098",
+      "query": "测试编号98：质量2kg的物体受合力196N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "b6a20a9e-5e41-5112-9d45-b861f6f727f9",
+        "text": "自编测试事实98：由F=ma，F=196N且m=2kg时，a=98m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-099",
+      "query": "测试编号99：质量2kg的物体受合力198N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "f2dfaa30-a376-584d-a0a0-16508291ff81",
+        "text": "自编测试事实99：由F=ma，F=198N且m=2kg时，a=99m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-100",
+      "query": "测试编号100：质量2kg的物体受合力200N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 5,
+        "block_id": "dca458aa-dbb3-5abc-a004-3c27627fb9b2",
+        "text": "自编测试事实100：由F=ma，F=200N且m=2kg时，a=100m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-101",
+      "query": "测试编号101：质量2kg的物体受合力202N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "0ab972ea-fc6d-55c3-8bcb-3a2780fb4880",
+        "text": "自编测试事实101：由F=ma，F=202N且m=2kg时，a=101m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-102",
+      "query": "测试编号102：质量2kg的物体受合力204N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "b880ba70-b835-5076-8aef-c8db12a75cc8",
+        "text": "自编测试事实102：由F=ma，F=204N且m=2kg时，a=102m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-103",
+      "query": "测试编号103：质量2kg的物体受合力206N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "bd2bb8fc-d774-5d1d-85a8-16fc0dec2b54",
+        "text": "自编测试事实103：由F=ma，F=206N且m=2kg时，a=103m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-104",
+      "query": "测试编号104：质量2kg的物体受合力208N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "515510f4-8caa-5587-a35f-0cbce987835b",
+        "text": "自编测试事实104：由F=ma，F=208N且m=2kg时，a=104m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-105",
+      "query": "测试编号105：质量2kg的物体受合力210N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "bb9ffbd8-1aa5-5a07-a54f-cc79bbfe470f",
+        "text": "自编测试事实105：由F=ma，F=210N且m=2kg时，a=105m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-106",
+      "query": "测试编号106：质量2kg的物体受合力212N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "6ceb255b-bed4-5d24-aa9d-cca46eab5b19",
+        "text": "自编测试事实106：由F=ma，F=212N且m=2kg时，a=106m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-107",
+      "query": "测试编号107：质量2kg的物体受合力214N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "1c96d89d-0875-513c-a391-84646b11bbc0",
+        "text": "自编测试事实107：由F=ma，F=214N且m=2kg时，a=107m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-108",
+      "query": "测试编号108：质量2kg的物体受合力216N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "51a383a6-3d44-5a99-bf09-92138722c0bd",
+        "text": "自编测试事实108：由F=ma，F=216N且m=2kg时，a=108m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-109",
+      "query": "测试编号109：质量2kg的物体受合力218N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "ad1eeedf-0fff-5031-961e-d53051055a1b",
+        "text": "自编测试事实109：由F=ma，F=218N且m=2kg时，a=109m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-110",
+      "query": "测试编号110：质量2kg的物体受合力220N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "b085eef7-9dbb-5a9c-9d50-c6e47af126c1",
+        "text": "自编测试事实110：由F=ma，F=220N且m=2kg时，a=110m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-111",
+      "query": "测试编号111：质量2kg的物体受合力222N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "7f8487ac-1e7a-591a-b974-4657dee4ed36",
+        "text": "自编测试事实111：由F=ma，F=222N且m=2kg时，a=111m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-112",
+      "query": "测试编号112：质量2kg的物体受合力224N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "7f6b8cc6-e2da-523f-9ce0-d1c4a5b4c8cb",
+        "text": "自编测试事实112：由F=ma，F=224N且m=2kg时，a=112m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-113",
+      "query": "测试编号113：质量2kg的物体受合力226N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "f4869f94-4708-5f86-ab10-57c9056e3c50",
+        "text": "自编测试事实113：由F=ma，F=226N且m=2kg时，a=113m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-114",
+      "query": "测试编号114：质量2kg的物体受合力228N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "6a69c464-4958-506d-a803-dc6b50f7cd23",
+        "text": "自编测试事实114：由F=ma，F=228N且m=2kg时，a=114m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-115",
+      "query": "测试编号115：质量2kg的物体受合力230N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "c52840ca-880a-51da-a625-6dff9c3828ed",
+        "text": "自编测试事实115：由F=ma，F=230N且m=2kg时，a=115m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-116",
+      "query": "测试编号116：质量2kg的物体受合力232N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "0b6c6d69-e6b7-5413-a6c6-adaeb3bd0797",
+        "text": "自编测试事实116：由F=ma，F=232N且m=2kg时，a=116m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-117",
+      "query": "测试编号117：质量2kg的物体受合力234N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "8ecc522e-03b6-5b3d-be57-e938e0b76980",
+        "text": "自编测试事实117：由F=ma，F=234N且m=2kg时，a=117m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-118",
+      "query": "测试编号118：质量2kg的物体受合力236N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "79ea31a5-ed67-5efd-b8a9-c284dc25b34b",
+        "text": "自编测试事实118：由F=ma，F=236N且m=2kg时，a=118m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-119",
+      "query": "测试编号119：质量2kg的物体受合力238N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "eb450180-c719-559b-a1c5-a22b5f86516e",
+        "text": "自编测试事实119：由F=ma，F=238N且m=2kg时，a=119m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-120",
+      "query": "测试编号120：质量2kg的物体受合力240N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 6,
+        "block_id": "f85223dd-71f6-5068-abae-96ac9d1e257c",
+        "text": "自编测试事实120：由F=ma，F=240N且m=2kg时，a=120m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-121",
+      "query": "测试编号121：质量2kg的物体受合力242N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "bb289697-2df5-51d8-b558-eb898c1d6bfc",
+        "text": "自编测试事实121：由F=ma，F=242N且m=2kg时，a=121m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-122",
+      "query": "测试编号122：质量2kg的物体受合力244N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "759411a8-3058-5ae7-8ae8-370a55e7a6ca",
+        "text": "自编测试事实122：由F=ma，F=244N且m=2kg时，a=122m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-123",
+      "query": "测试编号123：质量2kg的物体受合力246N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "751b6329-fc22-52d0-aee1-a9630f8147b9",
+        "text": "自编测试事实123：由F=ma，F=246N且m=2kg时，a=123m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-124",
+      "query": "测试编号124：质量2kg的物体受合力248N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "38f8326b-e795-5f32-bac0-5de86cf124e6",
+        "text": "自编测试事实124：由F=ma，F=248N且m=2kg时，a=124m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-125",
+      "query": "测试编号125：质量2kg的物体受合力250N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "e0aae884-ea43-53bc-86e9-17972c48bc0d",
+        "text": "自编测试事实125：由F=ma，F=250N且m=2kg时，a=125m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-126",
+      "query": "测试编号126：质量2kg的物体受合力252N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "606176f3-6afd-5205-b3f6-91db75e3be84",
+        "text": "自编测试事实126：由F=ma，F=252N且m=2kg时，a=126m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-127",
+      "query": "测试编号127：质量2kg的物体受合力254N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "2d0eeb47-151f-5bd2-ae50-557f783105c1",
+        "text": "自编测试事实127：由F=ma，F=254N且m=2kg时，a=127m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-128",
+      "query": "测试编号128：质量2kg的物体受合力256N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "d7e85b54-f2c2-563c-bd95-aa039de159c0",
+        "text": "自编测试事实128：由F=ma，F=256N且m=2kg时，a=128m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-129",
+      "query": "测试编号129：质量2kg的物体受合力258N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "8e42feb6-78ec-5265-b769-857995a3e727",
+        "text": "自编测试事实129：由F=ma，F=258N且m=2kg时，a=129m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-130",
+      "query": "测试编号130：质量2kg的物体受合力260N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "0ad3cca2-4a52-53c0-a26f-99348b332985",
+        "text": "自编测试事实130：由F=ma，F=260N且m=2kg时，a=130m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-131",
+      "query": "测试编号131：质量2kg的物体受合力262N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "8433052e-8f2e-5858-9661-e09150d75c45",
+        "text": "自编测试事实131：由F=ma，F=262N且m=2kg时，a=131m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-132",
+      "query": "测试编号132：质量2kg的物体受合力264N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "039d02a3-2061-5317-b104-33725d343813",
+        "text": "自编测试事实132：由F=ma，F=264N且m=2kg时，a=132m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-133",
+      "query": "测试编号133：质量2kg的物体受合力266N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "f12a3b44-0d66-527e-8371-83ce3c65ecba",
+        "text": "自编测试事实133：由F=ma，F=266N且m=2kg时，a=133m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-134",
+      "query": "测试编号134：质量2kg的物体受合力268N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "9122d946-24b5-5f92-a60d-52dfd335bfde",
+        "text": "自编测试事实134：由F=ma，F=268N且m=2kg时，a=134m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-135",
+      "query": "测试编号135：质量2kg的物体受合力270N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "9b055219-ea52-5483-b168-87e1fdbe325f",
+        "text": "自编测试事实135：由F=ma，F=270N且m=2kg时，a=135m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-136",
+      "query": "测试编号136：质量2kg的物体受合力272N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "c2bde9cf-d003-57c4-b422-32ede423d76c",
+        "text": "自编测试事实136：由F=ma，F=272N且m=2kg时，a=136m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-137",
+      "query": "测试编号137：质量2kg的物体受合力274N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "ad083dc2-99cc-54bc-a897-ec4187356b54",
+        "text": "自编测试事实137：由F=ma，F=274N且m=2kg时，a=137m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-138",
+      "query": "测试编号138：质量2kg的物体受合力276N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "8457fa58-2459-5373-a4da-9dffe75f5ebb",
+        "text": "自编测试事实138：由F=ma，F=276N且m=2kg时，a=138m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-139",
+      "query": "测试编号139：质量2kg的物体受合力278N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "9643f732-35ef-5973-963e-78a5efe934ae",
+        "text": "自编测试事实139：由F=ma，F=278N且m=2kg时，a=139m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-140",
+      "query": "测试编号140：质量2kg的物体受合力280N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 7,
+        "block_id": "f95bce66-ae45-55f5-ac89-d23feccc4cd0",
+        "text": "自编测试事实140：由F=ma，F=280N且m=2kg时，a=140m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-141",
+      "query": "测试编号141：质量2kg的物体受合力282N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "a4b687c4-c90f-51b6-84a3-622b9c050e6b",
+        "text": "自编测试事实141：由F=ma，F=282N且m=2kg时，a=141m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-142",
+      "query": "测试编号142：质量2kg的物体受合力284N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "5aac7842-05df-5511-82ff-eceef9e00ddb",
+        "text": "自编测试事实142：由F=ma，F=284N且m=2kg时，a=142m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-143",
+      "query": "测试编号143：质量2kg的物体受合力286N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "c2b3ccc1-8455-5f38-bdfc-9c8053472e04",
+        "text": "自编测试事实143：由F=ma，F=286N且m=2kg时，a=143m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-144",
+      "query": "测试编号144：质量2kg的物体受合力288N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "835ee9c3-93c6-5049-9959-903143faef7f",
+        "text": "自编测试事实144：由F=ma，F=288N且m=2kg时，a=144m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-145",
+      "query": "测试编号145：质量2kg的物体受合力290N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "39893d55-8614-5e67-a800-26d3d2d4df54",
+        "text": "自编测试事实145：由F=ma，F=290N且m=2kg时，a=145m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-146",
+      "query": "测试编号146：质量2kg的物体受合力292N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "a47eb48c-c99a-5182-86c3-f73ad5ecc2a1",
+        "text": "自编测试事实146：由F=ma，F=292N且m=2kg时，a=146m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-147",
+      "query": "测试编号147：质量2kg的物体受合力294N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "c6360f70-27ad-575e-87a1-90e44f476f3f",
+        "text": "自编测试事实147：由F=ma，F=294N且m=2kg时，a=147m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-148",
+      "query": "测试编号148：质量2kg的物体受合力296N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "be0a91c8-5af7-58ba-afda-af4710c3cfbe",
+        "text": "自编测试事实148：由F=ma，F=296N且m=2kg时，a=148m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-149",
+      "query": "测试编号149：质量2kg的物体受合力298N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "7c994e02-aed0-5e8e-836d-620a593f44da",
+        "text": "自编测试事实149：由F=ma，F=298N且m=2kg时，a=149m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-150",
+      "query": "测试编号150：质量2kg的物体受合力300N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "610153f0-f068-508a-b0e8-053d16e66351",
+        "text": "自编测试事实150：由F=ma，F=300N且m=2kg时，a=150m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-151",
+      "query": "测试编号151：质量2kg的物体受合力302N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "e8c3481e-bef8-5964-af62-6c987b0ec805",
+        "text": "自编测试事实151：由F=ma，F=302N且m=2kg时，a=151m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-152",
+      "query": "测试编号152：质量2kg的物体受合力304N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "bdfd1ce8-42ad-50d8-aff8-12fb2dfd9e6b",
+        "text": "自编测试事实152：由F=ma，F=304N且m=2kg时，a=152m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-153",
+      "query": "测试编号153：质量2kg的物体受合力306N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "884e7203-5796-5e93-b8e5-4b48c1778f52",
+        "text": "自编测试事实153：由F=ma，F=306N且m=2kg时，a=153m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-154",
+      "query": "测试编号154：质量2kg的物体受合力308N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "61a0715c-90d2-5c6c-9339-d8d587de56f0",
+        "text": "自编测试事实154：由F=ma，F=308N且m=2kg时，a=154m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-155",
+      "query": "测试编号155：质量2kg的物体受合力310N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "0747c656-caec-561b-ac2d-50d02a33e159",
+        "text": "自编测试事实155：由F=ma，F=310N且m=2kg时，a=155m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-156",
+      "query": "测试编号156：质量2kg的物体受合力312N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "fb99509a-2d35-5d3c-898a-73306643d808",
+        "text": "自编测试事实156：由F=ma，F=312N且m=2kg时，a=156m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-157",
+      "query": "测试编号157：质量2kg的物体受合力314N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "77cda0f9-2489-557a-aa07-e33a5df02304",
+        "text": "自编测试事实157：由F=ma，F=314N且m=2kg时，a=157m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-158",
+      "query": "测试编号158：质量2kg的物体受合力316N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "6a2fd299-95c2-5325-9bb1-278d6882adcf",
+        "text": "自编测试事实158：由F=ma，F=316N且m=2kg时，a=158m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-159",
+      "query": "测试编号159：质量2kg的物体受合力318N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "b2cee1d1-bf1f-539f-94c0-5bf3a9824610",
+        "text": "自编测试事实159：由F=ma，F=318N且m=2kg时，a=159m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-160",
+      "query": "测试编号160：质量2kg的物体受合力320N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 8,
+        "block_id": "b5ef8d8c-ebea-5b69-8ff9-05d79bf8ca67",
+        "text": "自编测试事实160：由F=ma，F=320N且m=2kg时，a=160m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-161",
+      "query": "测试编号161：质量2kg的物体受合力322N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "9649c857-d227-5a4d-b11f-a3e1cea8cdad",
+        "text": "自编测试事实161：由F=ma，F=322N且m=2kg时，a=161m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-162",
+      "query": "测试编号162：质量2kg的物体受合力324N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "5c8ec708-5a5f-53d2-bb64-9c983cce3096",
+        "text": "自编测试事实162：由F=ma，F=324N且m=2kg时，a=162m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-163",
+      "query": "测试编号163：质量2kg的物体受合力326N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "ccd457ec-27b8-5c13-a2a9-e677bf1d07b4",
+        "text": "自编测试事实163：由F=ma，F=326N且m=2kg时，a=163m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-164",
+      "query": "测试编号164：质量2kg的物体受合力328N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "b402cf06-f441-5c78-bce8-4e86eddd1a7e",
+        "text": "自编测试事实164：由F=ma，F=328N且m=2kg时，a=164m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-165",
+      "query": "测试编号165：质量2kg的物体受合力330N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "4e49301e-8ba4-5167-82d6-98c88ddcd753",
+        "text": "自编测试事实165：由F=ma，F=330N且m=2kg时，a=165m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-166",
+      "query": "测试编号166：质量2kg的物体受合力332N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "ad7ac5e0-0406-532e-9bba-2fa1d5e723b7",
+        "text": "自编测试事实166：由F=ma，F=332N且m=2kg时，a=166m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-167",
+      "query": "测试编号167：质量2kg的物体受合力334N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "70e7c6bd-4b53-50c7-a179-d0674ff52591",
+        "text": "自编测试事实167：由F=ma，F=334N且m=2kg时，a=167m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-168",
+      "query": "测试编号168：质量2kg的物体受合力336N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "88ee615f-408a-5528-88f6-51e2165100fe",
+        "text": "自编测试事实168：由F=ma，F=336N且m=2kg时，a=168m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-169",
+      "query": "测试编号169：质量2kg的物体受合力338N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "8d53bc47-8bea-5f4e-97c4-3d98d0cb2a56",
+        "text": "自编测试事实169：由F=ma，F=338N且m=2kg时，a=169m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-170",
+      "query": "测试编号170：质量2kg的物体受合力340N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "599e93d0-edac-51eb-9593-974a4596b431",
+        "text": "自编测试事实170：由F=ma，F=340N且m=2kg时，a=170m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-171",
+      "query": "测试编号171：质量2kg的物体受合力342N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "2fff4da5-2f69-5f61-8d2c-32a9398faeba",
+        "text": "自编测试事实171：由F=ma，F=342N且m=2kg时，a=171m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-172",
+      "query": "测试编号172：质量2kg的物体受合力344N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "3074ecb9-47e2-532e-94cc-c787607f656d",
+        "text": "自编测试事实172：由F=ma，F=344N且m=2kg时，a=172m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-173",
+      "query": "测试编号173：质量2kg的物体受合力346N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "3c7994c7-9b0a-57c3-9859-d5ab74e37f4b",
+        "text": "自编测试事实173：由F=ma，F=346N且m=2kg时，a=173m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-174",
+      "query": "测试编号174：质量2kg的物体受合力348N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "ce584890-9f80-584c-927f-0de2c0ec45e3",
+        "text": "自编测试事实174：由F=ma，F=348N且m=2kg时，a=174m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-175",
+      "query": "测试编号175：质量2kg的物体受合力350N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "c0bbf957-3538-5eab-a8da-62c8748a4a08",
+        "text": "自编测试事实175：由F=ma，F=350N且m=2kg时，a=175m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-176",
+      "query": "测试编号176：质量2kg的物体受合力352N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "515c22f3-f6cd-558a-8a42-dcff5d5151d9",
+        "text": "自编测试事实176：由F=ma，F=352N且m=2kg时，a=176m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-177",
+      "query": "测试编号177：质量2kg的物体受合力354N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "537458ab-d6d6-5412-85f1-093be92da92a",
+        "text": "自编测试事实177：由F=ma，F=354N且m=2kg时，a=177m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-178",
+      "query": "测试编号178：质量2kg的物体受合力356N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "b0b18273-6a76-5488-8d5b-bd9e17bef4d7",
+        "text": "自编测试事实178：由F=ma，F=356N且m=2kg时，a=178m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-179",
+      "query": "测试编号179：质量2kg的物体受合力358N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "e6523988-80d8-5655-b0d7-b48b8cc4da07",
+        "text": "自编测试事实179：由F=ma，F=358N且m=2kg时，a=179m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-180",
+      "query": "测试编号180：质量2kg的物体受合力360N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 9,
+        "block_id": "93f66f97-e1b0-5aca-bd16-89a7f7a942f2",
+        "text": "自编测试事实180：由F=ma，F=360N且m=2kg时，a=180m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-181",
+      "query": "测试编号181：质量2kg的物体受合力362N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "2f588013-0f0b-546b-8a8c-4dd98232c180",
+        "text": "自编测试事实181：由F=ma，F=362N且m=2kg时，a=181m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-182",
+      "query": "测试编号182：质量2kg的物体受合力364N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "4d443a69-674a-5c06-a649-4a6087793d55",
+        "text": "自编测试事实182：由F=ma，F=364N且m=2kg时，a=182m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-183",
+      "query": "测试编号183：质量2kg的物体受合力366N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "4cf24f99-2a18-5f1c-9a23-c13dc5c17a5b",
+        "text": "自编测试事实183：由F=ma，F=366N且m=2kg时，a=183m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-184",
+      "query": "测试编号184：质量2kg的物体受合力368N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "1eb9f039-5c31-5376-96d6-953ebd7ee80f",
+        "text": "自编测试事实184：由F=ma，F=368N且m=2kg时，a=184m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-185",
+      "query": "测试编号185：质量2kg的物体受合力370N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "6a9cd7df-545e-5e54-848f-badf5bae96a8",
+        "text": "自编测试事实185：由F=ma，F=370N且m=2kg时，a=185m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-186",
+      "query": "测试编号186：质量2kg的物体受合力372N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "3ad66ec6-109c-530d-861d-561a34b3c61f",
+        "text": "自编测试事实186：由F=ma，F=372N且m=2kg时，a=186m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-187",
+      "query": "测试编号187：质量2kg的物体受合力374N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "df5bdd64-e02c-5817-a0d2-f86d6080011a",
+        "text": "自编测试事实187：由F=ma，F=374N且m=2kg时，a=187m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-188",
+      "query": "测试编号188：质量2kg的物体受合力376N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "51bfe098-f9b8-5be5-81f6-1ace4f35f02f",
+        "text": "自编测试事实188：由F=ma，F=376N且m=2kg时，a=188m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-189",
+      "query": "测试编号189：质量2kg的物体受合力378N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "8db664c6-1d21-5780-aaf1-0a722f4bd227",
+        "text": "自编测试事实189：由F=ma，F=378N且m=2kg时，a=189m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-190",
+      "query": "测试编号190：质量2kg的物体受合力380N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "152b3414-d7b7-5d7b-a0b1-98b1a8f90d8c",
+        "text": "自编测试事实190：由F=ma，F=380N且m=2kg时，a=190m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-191",
+      "query": "测试编号191：质量2kg的物体受合力382N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "f495ed36-5d75-5c7a-b9ce-dbc0ae90343c",
+        "text": "自编测试事实191：由F=ma，F=382N且m=2kg时，a=191m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-192",
+      "query": "测试编号192：质量2kg的物体受合力384N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "59e8392c-f850-509a-8e4e-e727f7556406",
+        "text": "自编测试事实192：由F=ma，F=384N且m=2kg时，a=192m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-193",
+      "query": "测试编号193：质量2kg的物体受合力386N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "c98837b4-20a3-5464-bd9c-fd14b8a26bc4",
+        "text": "自编测试事实193：由F=ma，F=386N且m=2kg时，a=193m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-194",
+      "query": "测试编号194：质量2kg的物体受合力388N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "4e4a1fd9-87ec-5191-8c19-1123695b7e73",
+        "text": "自编测试事实194：由F=ma，F=388N且m=2kg时，a=194m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-195",
+      "query": "测试编号195：质量2kg的物体受合力390N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "9bd69577-fe31-5bc3-9c4d-0a5000cd5ced",
+        "text": "自编测试事实195：由F=ma，F=390N且m=2kg时，a=195m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-196",
+      "query": "测试编号196：质量2kg的物体受合力392N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "0278e409-1898-50eb-957c-6f3ad0f39472",
+        "text": "自编测试事实196：由F=ma，F=392N且m=2kg时，a=196m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-197",
+      "query": "测试编号197：质量2kg的物体受合力394N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "e33c17b5-ffaa-5cf1-a530-32873c3c2a38",
+        "text": "自编测试事实197：由F=ma，F=394N且m=2kg时，a=197m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-198",
+      "query": "测试编号198：质量2kg的物体受合力396N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "4e9d99be-aab3-5ac5-94f7-25ae561b75f7",
+        "text": "自编测试事实198：由F=ma，F=396N且m=2kg时，a=198m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-199",
+      "query": "测试编号199：质量2kg的物体受合力398N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "1f67d5d0-0b07-51ad-90fe-6f2daf2d3be6",
+        "text": "自编测试事实199：由F=ma，F=398N且m=2kg时，a=199m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-200",
+      "query": "测试编号200：质量2kg的物体受合力400N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 10,
+        "block_id": "f2b7e64d-b20c-5a6b-af8c-65d7ad708021",
+        "text": "自编测试事实200：由F=ma，F=400N且m=2kg时，a=200m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-201",
+      "query": "测试编号201：质量2kg的物体受合力402N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "8c0e99e0-a55e-5cc5-8d9f-f0de65fd8015",
+        "text": "自编测试事实201：由F=ma，F=402N且m=2kg时，a=201m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-202",
+      "query": "测试编号202：质量2kg的物体受合力404N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "dfa8f0d9-c6bf-571c-af0b-3561d5a5e040",
+        "text": "自编测试事实202：由F=ma，F=404N且m=2kg时，a=202m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-203",
+      "query": "测试编号203：质量2kg的物体受合力406N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "da607e60-6528-5071-8c3e-e2930ff385a0",
+        "text": "自编测试事实203：由F=ma，F=406N且m=2kg时，a=203m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-204",
+      "query": "测试编号204：质量2kg的物体受合力408N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "7f2bed0b-bf44-519d-9dc9-0682fc613a83",
+        "text": "自编测试事实204：由F=ma，F=408N且m=2kg时，a=204m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-205",
+      "query": "测试编号205：质量2kg的物体受合力410N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "023054e5-7fdb-5215-9ccc-bff008a381ba",
+        "text": "自编测试事实205：由F=ma，F=410N且m=2kg时，a=205m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-206",
+      "query": "测试编号206：质量2kg的物体受合力412N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "5aae1b0d-91fc-53ec-8412-d894a4992c15",
+        "text": "自编测试事实206：由F=ma，F=412N且m=2kg时，a=206m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-207",
+      "query": "测试编号207：质量2kg的物体受合力414N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "3b37f52c-ccc3-5554-94fe-ba5b249f5c78",
+        "text": "自编测试事实207：由F=ma，F=414N且m=2kg时，a=207m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-208",
+      "query": "测试编号208：质量2kg的物体受合力416N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "63ea9f30-4d16-5dfa-b3a9-91dfb35226b1",
+        "text": "自编测试事实208：由F=ma，F=416N且m=2kg时，a=208m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-209",
+      "query": "测试编号209：质量2kg的物体受合力418N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "9223d9ba-175b-5ee2-828f-edc7c5c41101",
+        "text": "自编测试事实209：由F=ma，F=418N且m=2kg时，a=209m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-210",
+      "query": "测试编号210：质量2kg的物体受合力420N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "aa58619f-3c60-520b-8e62-b76688ecd4d4",
+        "text": "自编测试事实210：由F=ma，F=420N且m=2kg时，a=210m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-211",
+      "query": "测试编号211：质量2kg的物体受合力422N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "1ffe3926-29a2-561c-858a-d6e72a2111a7",
+        "text": "自编测试事实211：由F=ma，F=422N且m=2kg时，a=211m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-212",
+      "query": "测试编号212：质量2kg的物体受合力424N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "c70b2471-3464-59ad-b880-7ed16baec8ae",
+        "text": "自编测试事实212：由F=ma，F=424N且m=2kg时，a=212m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-213",
+      "query": "测试编号213：质量2kg的物体受合力426N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "c1639f06-858e-54d8-8116-43e6fd8f6ec0",
+        "text": "自编测试事实213：由F=ma，F=426N且m=2kg时，a=213m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-214",
+      "query": "测试编号214：质量2kg的物体受合力428N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "d55e6fc5-dd3a-54d8-9b5c-b73e48629e9e",
+        "text": "自编测试事实214：由F=ma，F=428N且m=2kg时，a=214m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-215",
+      "query": "测试编号215：质量2kg的物体受合力430N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "4e4962a8-7347-572c-b5f6-50dc137a7113",
+        "text": "自编测试事实215：由F=ma，F=430N且m=2kg时，a=215m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-216",
+      "query": "测试编号216：质量2kg的物体受合力432N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "2a660651-48b8-519c-a223-72de77960285",
+        "text": "自编测试事实216：由F=ma，F=432N且m=2kg时，a=216m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-217",
+      "query": "测试编号217：质量2kg的物体受合力434N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "a65bb437-617b-576e-9084-623574561d72",
+        "text": "自编测试事实217：由F=ma，F=434N且m=2kg时，a=217m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-218",
+      "query": "测试编号218：质量2kg的物体受合力436N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "3a970124-1ed8-52a4-9737-9dd86fc861f9",
+        "text": "自编测试事实218：由F=ma，F=436N且m=2kg时，a=218m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-219",
+      "query": "测试编号219：质量2kg的物体受合力438N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "5f883014-a5c9-5133-9a9d-992f50922dce",
+        "text": "自编测试事实219：由F=ma，F=438N且m=2kg时，a=219m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-220",
+      "query": "测试编号220：质量2kg的物体受合力440N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 11,
+        "block_id": "679d7707-85cd-57e9-9785-386fb26574b4",
+        "text": "自编测试事实220：由F=ma，F=440N且m=2kg时，a=220m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-221",
+      "query": "测试编号221：质量2kg的物体受合力442N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "852be018-2c5c-528b-bddb-43a8783c39ef",
+        "text": "自编测试事实221：由F=ma，F=442N且m=2kg时，a=221m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-222",
+      "query": "测试编号222：质量2kg的物体受合力444N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "314b3ea4-91d3-56ff-afa6-af01f1fc1562",
+        "text": "自编测试事实222：由F=ma，F=444N且m=2kg时，a=222m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-223",
+      "query": "测试编号223：质量2kg的物体受合力446N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "b909bead-ff2d-50f3-bdb7-37471fa4eee0",
+        "text": "自编测试事实223：由F=ma，F=446N且m=2kg时，a=223m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-224",
+      "query": "测试编号224：质量2kg的物体受合力448N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "d28d2068-55cf-5b78-a47b-6bf27817e0aa",
+        "text": "自编测试事实224：由F=ma，F=448N且m=2kg时，a=224m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-225",
+      "query": "测试编号225：质量2kg的物体受合力450N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "ac5dd8d9-1fe2-5762-a710-997901c8947c",
+        "text": "自编测试事实225：由F=ma，F=450N且m=2kg时，a=225m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-226",
+      "query": "测试编号226：质量2kg的物体受合力452N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "0a42bc0d-3db5-5481-8b5c-4e93c2f13665",
+        "text": "自编测试事实226：由F=ma，F=452N且m=2kg时，a=226m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-227",
+      "query": "测试编号227：质量2kg的物体受合力454N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "dac5ce2c-1f10-50d2-b5e2-3dec45eb9e38",
+        "text": "自编测试事实227：由F=ma，F=454N且m=2kg时，a=227m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-228",
+      "query": "测试编号228：质量2kg的物体受合力456N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "61d9dc16-d253-5920-86f4-891b95514f89",
+        "text": "自编测试事实228：由F=ma，F=456N且m=2kg时，a=228m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-229",
+      "query": "测试编号229：质量2kg的物体受合力458N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "3fa7eedd-9735-502a-9b50-4e0f2d873755",
+        "text": "自编测试事实229：由F=ma，F=458N且m=2kg时，a=229m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-230",
+      "query": "测试编号230：质量2kg的物体受合力460N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "6058a49e-163a-52a5-a200-1294338f1528",
+        "text": "自编测试事实230：由F=ma，F=460N且m=2kg时，a=230m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-231",
+      "query": "测试编号231：质量2kg的物体受合力462N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "ae3eaef7-9462-549d-8442-a7a773002ded",
+        "text": "自编测试事实231：由F=ma，F=462N且m=2kg时，a=231m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-232",
+      "query": "测试编号232：质量2kg的物体受合力464N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "3be5732a-ad91-5fb4-8737-d1b50682d3b5",
+        "text": "自编测试事实232：由F=ma，F=464N且m=2kg时，a=232m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-233",
+      "query": "测试编号233：质量2kg的物体受合力466N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "873cb3bf-cb89-597e-a078-9272cb658232",
+        "text": "自编测试事实233：由F=ma，F=466N且m=2kg时，a=233m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-234",
+      "query": "测试编号234：质量2kg的物体受合力468N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "51bc0f70-9515-5ecb-a45c-d68a36f371c4",
+        "text": "自编测试事实234：由F=ma，F=468N且m=2kg时，a=234m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-235",
+      "query": "测试编号235：质量2kg的物体受合力470N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "f291bbaf-6ada-5108-907b-a8732b9f7184",
+        "text": "自编测试事实235：由F=ma，F=470N且m=2kg时，a=235m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-236",
+      "query": "测试编号236：质量2kg的物体受合力472N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "9a024965-51c7-5fd9-b4c8-7d28f71f166b",
+        "text": "自编测试事实236：由F=ma，F=472N且m=2kg时，a=236m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-237",
+      "query": "测试编号237：质量2kg的物体受合力474N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "6cc1958b-f4bf-5cbc-a36a-69296e5c3067",
+        "text": "自编测试事实237：由F=ma，F=474N且m=2kg时，a=237m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-238",
+      "query": "测试编号238：质量2kg的物体受合力476N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "aac09367-e55e-5723-a5ee-6b7a733f8f92",
+        "text": "自编测试事实238：由F=ma，F=476N且m=2kg时，a=238m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-239",
+      "query": "测试编号239：质量2kg的物体受合力478N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "ec1fb4b4-de2c-5bd9-a62d-65a9e1b40d74",
+        "text": "自编测试事实239：由F=ma，F=478N且m=2kg时，a=239m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-240",
+      "query": "测试编号240：质量2kg的物体受合力480N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 12,
+        "block_id": "6a11ff22-f14c-58bc-8e37-717f03486053",
+        "text": "自编测试事实240：由F=ma，F=480N且m=2kg时，a=240m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-241",
+      "query": "测试编号241：质量2kg的物体受合力482N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "ab2a353d-b781-5f4f-bffe-46892763e749",
+        "text": "自编测试事实241：由F=ma，F=482N且m=2kg时，a=241m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-242",
+      "query": "测试编号242：质量2kg的物体受合力484N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "4e270b1c-519f-545a-bef4-6dab70aab379",
+        "text": "自编测试事实242：由F=ma，F=484N且m=2kg时，a=242m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-243",
+      "query": "测试编号243：质量2kg的物体受合力486N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "d942785f-6b32-51d3-b479-4088328bdb54",
+        "text": "自编测试事实243：由F=ma，F=486N且m=2kg时，a=243m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-244",
+      "query": "测试编号244：质量2kg的物体受合力488N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "8ec1b378-af8b-5bbb-837c-3f0c40bb60f3",
+        "text": "自编测试事实244：由F=ma，F=488N且m=2kg时，a=244m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-245",
+      "query": "测试编号245：质量2kg的物体受合力490N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "6132d792-d9dc-5794-b69a-d1896453025c",
+        "text": "自编测试事实245：由F=ma，F=490N且m=2kg时，a=245m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-246",
+      "query": "测试编号246：质量2kg的物体受合力492N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "cf5a36c0-c587-508a-9b8b-a8ea68dd5d89",
+        "text": "自编测试事实246：由F=ma，F=492N且m=2kg时，a=246m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-247",
+      "query": "测试编号247：质量2kg的物体受合力494N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "fcb07737-030a-5fcc-806e-47721956109f",
+        "text": "自编测试事实247：由F=ma，F=494N且m=2kg时，a=247m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-248",
+      "query": "测试编号248：质量2kg的物体受合力496N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "87d9d7d2-e085-5a87-acd7-78b654849d40",
+        "text": "自编测试事实248：由F=ma，F=496N且m=2kg时，a=248m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-249",
+      "query": "测试编号249：质量2kg的物体受合力498N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "d41abca2-a6b0-5492-ae49-597de911f629",
+        "text": "自编测试事实249：由F=ma，F=498N且m=2kg时，a=249m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-250",
+      "query": "测试编号250：质量2kg的物体受合力500N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "d2b904d8-96a6-5f3e-b81a-a1978e06bdc6",
+        "text": "自编测试事实250：由F=ma，F=500N且m=2kg时，a=250m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-251",
+      "query": "测试编号251：质量2kg的物体受合力502N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "43dc3cec-b9c7-5ec6-b3f1-3ea15ef38b19",
+        "text": "自编测试事实251：由F=ma，F=502N且m=2kg时，a=251m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-252",
+      "query": "测试编号252：质量2kg的物体受合力504N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "63c3edb3-c560-5a4f-aefb-9e44517845e2",
+        "text": "自编测试事实252：由F=ma，F=504N且m=2kg时，a=252m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-253",
+      "query": "测试编号253：质量2kg的物体受合力506N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "62075255-e29f-5613-9296-6e51446f3af1",
+        "text": "自编测试事实253：由F=ma，F=506N且m=2kg时，a=253m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-254",
+      "query": "测试编号254：质量2kg的物体受合力508N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "a7fc4671-ce36-57ad-8901-4220a760a5de",
+        "text": "自编测试事实254：由F=ma，F=508N且m=2kg时，a=254m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-255",
+      "query": "测试编号255：质量2kg的物体受合力510N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "37b77e37-e872-58fe-ab16-a12ac7421b64",
+        "text": "自编测试事实255：由F=ma，F=510N且m=2kg时，a=255m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-256",
+      "query": "测试编号256：质量2kg的物体受合力512N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "c6515c54-9409-5fa9-845b-2b7a66061971",
+        "text": "自编测试事实256：由F=ma，F=512N且m=2kg时，a=256m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-257",
+      "query": "测试编号257：质量2kg的物体受合力514N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "a4ced16d-186c-5649-b2c3-7b7604f5154c",
+        "text": "自编测试事实257：由F=ma，F=514N且m=2kg时，a=257m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-258",
+      "query": "测试编号258：质量2kg的物体受合力516N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "8d3f9721-776f-5fdb-83bd-5faa277feccd",
+        "text": "自编测试事实258：由F=ma，F=516N且m=2kg时，a=258m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-259",
+      "query": "测试编号259：质量2kg的物体受合力518N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "cdb4af53-a742-54bc-b46c-9e5686922960",
+        "text": "自编测试事实259：由F=ma，F=518N且m=2kg时，a=259m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-260",
+      "query": "测试编号260：质量2kg的物体受合力520N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 13,
+        "block_id": "d0204eed-cc4d-55b7-932f-542f998492c5",
+        "text": "自编测试事实260：由F=ma，F=520N且m=2kg时，a=260m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-261",
+      "query": "测试编号261：质量2kg的物体受合力522N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "90b6383b-a4af-5eac-a858-b52292d72e08",
+        "text": "自编测试事实261：由F=ma，F=522N且m=2kg时，a=261m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-262",
+      "query": "测试编号262：质量2kg的物体受合力524N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "61282f8e-ec48-55da-a6fe-9c0b64b86880",
+        "text": "自编测试事实262：由F=ma，F=524N且m=2kg时，a=262m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-263",
+      "query": "测试编号263：质量2kg的物体受合力526N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "e7db883b-3a73-5815-aa29-97bb2daea342",
+        "text": "自编测试事实263：由F=ma，F=526N且m=2kg时，a=263m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-264",
+      "query": "测试编号264：质量2kg的物体受合力528N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "c785e724-1f7a-5bd5-b29e-e764bfb19c09",
+        "text": "自编测试事实264：由F=ma，F=528N且m=2kg时，a=264m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-265",
+      "query": "测试编号265：质量2kg的物体受合力530N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "e40cfbcc-44a8-5674-8773-5928e0c9c4b0",
+        "text": "自编测试事实265：由F=ma，F=530N且m=2kg时，a=265m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-266",
+      "query": "测试编号266：质量2kg的物体受合力532N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "49972d52-aace-5032-810b-f1988ee96acd",
+        "text": "自编测试事实266：由F=ma，F=532N且m=2kg时，a=266m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-267",
+      "query": "测试编号267：质量2kg的物体受合力534N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "98d430dc-2823-5a9e-94de-9937bd902863",
+        "text": "自编测试事实267：由F=ma，F=534N且m=2kg时，a=267m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-268",
+      "query": "测试编号268：质量2kg的物体受合力536N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "ecb9efe6-4ae2-56f4-a8a7-6da575136310",
+        "text": "自编测试事实268：由F=ma，F=536N且m=2kg时，a=268m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-269",
+      "query": "测试编号269：质量2kg的物体受合力538N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "fd8eae92-e449-55ff-b1c0-523db2c12cb8",
+        "text": "自编测试事实269：由F=ma，F=538N且m=2kg时，a=269m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-270",
+      "query": "测试编号270：质量2kg的物体受合力540N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "2fc3d15f-ad4d-542e-b982-434d4ed35a41",
+        "text": "自编测试事实270：由F=ma，F=540N且m=2kg时，a=270m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-271",
+      "query": "测试编号271：质量2kg的物体受合力542N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "db6cccf2-297d-5778-baca-b522ae3f71d0",
+        "text": "自编测试事实271：由F=ma，F=542N且m=2kg时，a=271m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-272",
+      "query": "测试编号272：质量2kg的物体受合力544N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "20ff2c9c-c76e-57ee-8791-58954d2c1b6c",
+        "text": "自编测试事实272：由F=ma，F=544N且m=2kg时，a=272m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-273",
+      "query": "测试编号273：质量2kg的物体受合力546N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "bd087cde-dba3-5947-a93e-c56b7f629257",
+        "text": "自编测试事实273：由F=ma，F=546N且m=2kg时，a=273m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-274",
+      "query": "测试编号274：质量2kg的物体受合力548N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "e0db776d-78e0-538a-9c0f-c53d18c9b76a",
+        "text": "自编测试事实274：由F=ma，F=548N且m=2kg时，a=274m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-275",
+      "query": "测试编号275：质量2kg的物体受合力550N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "3c1459fa-2d9a-5636-b2b5-e963918767c2",
+        "text": "自编测试事实275：由F=ma，F=550N且m=2kg时，a=275m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-276",
+      "query": "测试编号276：质量2kg的物体受合力552N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "34ad3aa3-d0f3-5201-a02b-cf3b8cc4d554",
+        "text": "自编测试事实276：由F=ma，F=552N且m=2kg时，a=276m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-277",
+      "query": "测试编号277：质量2kg的物体受合力554N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "58e541a5-a752-5ed4-ba06-110b104e295b",
+        "text": "自编测试事实277：由F=ma，F=554N且m=2kg时，a=277m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-278",
+      "query": "测试编号278：质量2kg的物体受合力556N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "d2d4b998-b115-55bb-a5b2-0a92bdcab32d",
+        "text": "自编测试事实278：由F=ma，F=556N且m=2kg时，a=278m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-279",
+      "query": "测试编号279：质量2kg的物体受合力558N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "50028294-f829-531f-8260-a60219bf378b",
+        "text": "自编测试事实279：由F=ma，F=558N且m=2kg时，a=279m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-280",
+      "query": "测试编号280：质量2kg的物体受合力560N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 14,
+        "block_id": "11057ac2-a36c-563b-815c-f9af532248db",
+        "text": "自编测试事实280：由F=ma，F=560N且m=2kg时，a=280m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-281",
+      "query": "测试编号281：质量2kg的物体受合力562N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "6b0d6e12-d5e6-50ba-98ed-cf5b350b3e05",
+        "text": "自编测试事实281：由F=ma，F=562N且m=2kg时，a=281m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-282",
+      "query": "测试编号282：质量2kg的物体受合力564N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "a340ba10-e905-55ca-add1-61582b8e8a59",
+        "text": "自编测试事实282：由F=ma，F=564N且m=2kg时，a=282m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-283",
+      "query": "测试编号283：质量2kg的物体受合力566N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "22422425-157f-5532-8af9-069e74445f9f",
+        "text": "自编测试事实283：由F=ma，F=566N且m=2kg时，a=283m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-284",
+      "query": "测试编号284：质量2kg的物体受合力568N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "9b86acb0-3c91-524d-96cf-f46ed6f8b5ce",
+        "text": "自编测试事实284：由F=ma，F=568N且m=2kg时，a=284m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-285",
+      "query": "测试编号285：质量2kg的物体受合力570N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "b74a85db-bef4-5a41-95fe-b849433acfaf",
+        "text": "自编测试事实285：由F=ma，F=570N且m=2kg时，a=285m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-286",
+      "query": "测试编号286：质量2kg的物体受合力572N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "3137d941-976d-5956-851e-7a436a6d04fd",
+        "text": "自编测试事实286：由F=ma，F=572N且m=2kg时，a=286m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-287",
+      "query": "测试编号287：质量2kg的物体受合力574N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "c568437d-66c2-57b9-bfd0-b272f0eea1d2",
+        "text": "自编测试事实287：由F=ma，F=574N且m=2kg时，a=287m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-288",
+      "query": "测试编号288：质量2kg的物体受合力576N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "b02e9961-221a-582f-bfdc-16130ed839a9",
+        "text": "自编测试事实288：由F=ma，F=576N且m=2kg时，a=288m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-289",
+      "query": "测试编号289：质量2kg的物体受合力578N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "385e4b13-6cc1-5f06-9d64-e0dbfb8b2675",
+        "text": "自编测试事实289：由F=ma，F=578N且m=2kg时，a=289m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-290",
+      "query": "测试编号290：质量2kg的物体受合力580N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "92f5b24e-5293-5d87-8f61-81dd4a4f1efd",
+        "text": "自编测试事实290：由F=ma，F=580N且m=2kg时，a=290m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-291",
+      "query": "测试编号291：质量2kg的物体受合力582N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "e609a5cd-c5d4-5e76-b127-9cd65144c846",
+        "text": "自编测试事实291：由F=ma，F=582N且m=2kg时，a=291m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-292",
+      "query": "测试编号292：质量2kg的物体受合力584N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "c1c20b41-207a-528e-970a-e5aaa874038e",
+        "text": "自编测试事实292：由F=ma，F=584N且m=2kg时，a=292m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-293",
+      "query": "测试编号293：质量2kg的物体受合力586N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "f65cb0a6-dd8e-56aa-b175-a65da55f421d",
+        "text": "自编测试事实293：由F=ma，F=586N且m=2kg时，a=293m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-294",
+      "query": "测试编号294：质量2kg的物体受合力588N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "cc8fefb2-aaf4-54ee-a307-f05ede195ef5",
+        "text": "自编测试事实294：由F=ma，F=588N且m=2kg时，a=294m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-295",
+      "query": "测试编号295：质量2kg的物体受合力590N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "b1cea9ef-9ece-5503-85c2-b5df49542fdd",
+        "text": "自编测试事实295：由F=ma，F=590N且m=2kg时，a=295m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-296",
+      "query": "测试编号296：质量2kg的物体受合力592N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "fb5a6db7-5c84-53c7-a289-cdf571f3f47d",
+        "text": "自编测试事实296：由F=ma，F=592N且m=2kg时，a=296m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-297",
+      "query": "测试编号297：质量2kg的物体受合力594N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "fc07bf3d-fce1-5f3c-8475-32f63200da3f",
+        "text": "自编测试事实297：由F=ma，F=594N且m=2kg时，a=297m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-298",
+      "query": "测试编号298：质量2kg的物体受合力596N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "07674e9a-a869-5f12-93f4-5b94e4083827",
+        "text": "自编测试事实298：由F=ma，F=596N且m=2kg时，a=298m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-299",
+      "query": "测试编号299：质量2kg的物体受合力598N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "4774b059-c53d-50b7-a189-5e1dd4e63960",
+        "text": "自编测试事实299：由F=ma，F=598N且m=2kg时，a=299m/s²。"
+      }
+    },
+    {
+      "id": "unit-gold-300",
+      "query": "测试编号300：质量2kg的物体受合力600N，加速度是多少？",
+      "gold": {
+        "doc_id": "synthetic-unit-corpus-not-a-textbook",
+        "page": 15,
+        "block_id": "92d32bf9-46e2-5f94-af14-a182508666b8",
+        "text": "自编测试事实300：由F=ma，F=600N且m=2kg时，a=300m/s²。"
+      }
+    }
+  ]
+}

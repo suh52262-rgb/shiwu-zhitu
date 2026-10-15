@@ -1,0 +1,67 @@
+{
+  "problem_id": "demo_02",
+  "title": "连接约束接口（合成测试题）",
+  "statement": "合成力学模型：水平物体质量m1=5 kg，经理想定滑轮连接悬挂物体m2=2 kg，g=9.8 m/s²。水平向左为m1的正向、竖直向上为m2的正向。(1)静止所需外力；(2)水平外力F=30 N时求共同加速度与张力；(3)张力为零的临界外力及松弛条件。",
+  "answer": "临界T=0时a=−g，F=m1a=−49 N，物理方向向右；超过临界后可以松弛，不能继续要求共同加速度。",
+  "figures": [],
+  "knowledge_points": [
+    "牛顿第二定律",
+    "受力分析"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions",
+    "shared_nodes": [
+      "S1",
+      "S2"
+    ],
+    "subquestions": {
+      "1": {
+        "statement": "静止时的平衡外力",
+        "nodes": [
+          "S3"
+        ]
+      },
+      "2": {
+        "statement": "F=30 N时的加速度与张力",
+        "nodes": [
+          "S3a",
+          "S3b",
+          "S4",
+          "S5"
+        ]
+      },
+      "3": {
+        "statement": "张力为零的临界外力大小与方向",
+        "nodes": [
+          "S6"
+        ],
+        "condition_anchors": [
+          "T=0"
+        ],
+        "force_direction": "向右",
+        "result_fields": [
+          {
+            "key": "F_magnitude",
+            "label": "水平力大小",
+            "presence_pattern": "(?:F\\s*[=＝]\\s*(?:[^=＝\\n]{1,24}[=＝]\\s*)?[+−-]?\\s*\\d+(?:\\.\\d+)?\\s*[N牛]|(?:水平力|力)的?大小(?:为|是|[=:：])?\\s*\\d+(?:\\.\\d+)?\\s*[N牛])"
+          },
+          {
+            "key": "F_direction",
+            "label": "水平力方向",
+            "presence_pattern": "(?:F[^\\n]{0,24}向[左右]|(?:力|推|拉)[^\\n]{0,12}向[左右]|向[左右][^\\n]{0,12}(?:F|推|拉))"
+          }
+        ],
+        "valid_partial_equations": [
+          "T=0",
+          "F=m1*a",
+          "-m2*g=m2*a",
+          "m2*g=m2*a"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "AI inspection of explicit examples, not human publication approval",
+  "reviewed_examples": [
+    {
+      "path": "frontend/teacher_config.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "993976b65f3e4efb",
+      "reason": "Interpolated URL template using runtime variables; not a literal account credential."
+    },
+    {
+      "path": "scripts/accept_error_evidence_reviews.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "f949a3b2f620586e",
+      "reason": "Ephemeral local acceptance container connection; not a production account."
+    },
+    {
+      "path": "tests/teacher/test_app_apptest.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "db84fbe87dd0d544",
+      "reason": "Intentionally unreachable local database fixture."
+    },
+    {
+      "path": "tests/teacher/test_config_pure.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "13e2d2b8dd1f2bcb",
+      "reason": "Synthetic password-masking test fixture."
+    },
+    {
+      "path": "tests/test_video_review_revisions.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "ec25b8fa54a9d7a8",
+      "reason": "Synthetic gateway.test endpoint identity fixture; no real network call."
+    },
+    {
+      "path": "tests/test_publication_audit.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "9be1da3c35528331",
+      "reason": "Synthetic local URL used exclusively to test credential detection and exact example matching; not a real service account."
+    },
+    {
+      "path": "tests/test_source_candidate_guard.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "5e526dbf84ef28ae",
+      "reason": "Synthetic local URL used exclusively to test credential detection and exact example matching; not a real service account."
+    },
+    {
+      "path": "tests/teacher/conftest.py",
+      "rule": "credential_url_literal",
+      "value_fingerprint": "db84fbe87dd0d544",
+      "reason": "Shared isolated teacher UI fixture; intentionally unreachable loopback DSN moved from test_app_db_mode.py. Not a production account."
+    }
+  ]
+}

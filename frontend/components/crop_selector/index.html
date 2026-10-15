@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<style>body{margin:0;font:14px sans-serif;color:#334155}canvas{display:block;max-width:100%;touch-action:none;cursor:crosshair;border:1px solid #cbd5e1}button{margin:8px 8px 0 0;padding:5px 12px}#status{font-size:12px}</style>
+<canvas id="image" aria-label="拖拽选择配图区域"></canvas>
+<button id="clear">清除选择</button><span id="status">拖拽框选；坐标以原图像素为准</span>
+<script>
+const canvas=document.getElementById('image'),ctx=canvas.getContext('2d'),img=new Image();
+let start=null,box=null,scale=1,disabled=false;
+function send(type,extra={}){window.parent.postMessage({isStreamlitMessage:true,type,...extra},'*')}
+function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0,canvas.width,canvas.height);if(box){ctx.strokeStyle='#2563eb';ctx.lineWidth=2;ctx.fillStyle='rgba(37,99,235,.12)';const [a,b,c,d]=box;ctx.fillRect(a*scale,b*scale,(c-a)*scale,(d-b)*scale);ctx.strokeRect(a*scale,b*scale,(c-a)*scale,(d-b)*scale)}}
+function layout(){if(!img.naturalWidth)return;scale=Math.min((Math.max(100,document.body.clientWidth)-4)/img.naturalWidth,540/img.naturalHeight,1);canvas.width=Math.round(img.naturalWidth*scale);canvas.height=Math.round(img.naturalHeight*scale);draw();send('streamlit:setFrameHeight',{height:canvas.height+45})}
+function point(e){const r=canvas.getBoundingClientRect();return [Math.max(0,Math.min(img.naturalWidth,(e.clientX-r.left)/scale)),Math.max(0,Math.min(img.naturalHeight,(e.clientY-r.top)/scale))]}
+window.addEventListener('message',e=>{if(e.source!==window.parent||e.data.type!=='streamlit:render')return;disabled=!!e.data.disabled;const src=e.data.args.image_data;if(img.src!==src){box=null;img.src=src}else layout()});
+img.onload=layout;window.addEventListener('resize',layout);
+canvas.addEventListener('pointerdown',e=>{if(disabled||!img.naturalWidth)return;start=point(e);canvas.setPointerCapture(e.pointerId)});
+canvas.addEventListener('pointermove',e=>{if(!start)return;const p=point(e);box=[Math.floor(Math.min(start[0],p[0])),Math.floor(Math.min(start[1],p[1])),Math.ceil(Math.max(start[0],p[0])),Math.ceil(Math.max(start[1],p[1]))];draw()});
+canvas.addEventListener('pointerup',e=>{if(!start)return;start=null;if(box&&box[2]>box[0]&&box[3]>box[1]){document.getElementById('status').textContent='原图坐标：'+box.join(', ');send('streamlit:setComponentValue',{value:box,dataType:'json'})}});
+document.getElementById('clear').onclick=()=>{start=null;box=null;draw();document.getElementById('status').textContent='已清除；请重新框选';send('streamlit:setComponentValue',{value:null,dataType:'json'})};
+send('streamlit:componentReady',{apiVersion:1});
+</script></html>

@@ -1,0 +1,223 @@
+{
+  "problem_id": "phy_002",
+  "nodes": [
+    {
+      "id": "S1",
+      "name": "建立研究对象",
+      "type": "modeling",
+      "description": "建立研究对象",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2",
+      "name": "列初始平衡式",
+      "type": "key_reasoning",
+      "description": "列初始平衡式",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3",
+      "name": "确定分离条件",
+      "type": "key_reasoning",
+      "description": "接触力为零时检查约束是否解除。",
+      "knowledge_points": [
+        "物体分离条件"
+      ],
+      "common_errors": [
+        "E1：把静态平衡条件当成分离条件"
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "描述共同运动",
+      "type": "calculation",
+      "description": "描述共同运动",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S5",
+      "name": "确定临界状态",
+      "type": "key_reasoning",
+      "description": "确定临界状态",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S6a",
+      "name": "能量关系",
+      "type": "calculation",
+      "description": "采用能量关系求临界速度。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S6b",
+      "name": "简谐关系",
+      "type": "calculation",
+      "description": "采用简谐运动关系求临界速度。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S7",
+      "name": "核对临界速度",
+      "type": "verification",
+      "description": "核对临界速度",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S8",
+      "name": "切换研究对象",
+      "type": "key_reasoning",
+      "description": "切换研究对象",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S9",
+      "name": "列后续运动关系",
+      "type": "calculation",
+      "description": "列后续运动关系",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S10",
+      "name": "求最后的运动距离",
+      "type": "result",
+      "description": "求最后的运动距离",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": [
+        "E4：在系统边界改变后继续混用能量项"
+      ]
+    },
+    {
+      "id": "S11",
+      "name": "核对结果",
+      "type": "result",
+      "description": "核对结果",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    }
+  ],
+  "edges": [
+    [
+      "S1",
+      "S2"
+    ],
+    [
+      "S2",
+      "S3"
+    ],
+    [
+      "S3",
+      "S4"
+    ],
+    [
+      "S4",
+      "S5"
+    ],
+    [
+      "S5",
+      "S6a"
+    ],
+    [
+      "S6a",
+      "S7"
+    ],
+    [
+      "S7",
+      "S8"
+    ],
+    [
+      "S8",
+      "S9"
+    ],
+    [
+      "S9",
+      "S10"
+    ],
+    [
+      "S10",
+      "S11"
+    ],
+    [
+      "S5",
+      "S6b"
+    ],
+    [
+      "S6b",
+      "S7"
+    ]
+  ],
+  "valid_paths": [
+    [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6a",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ],
+    [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6b",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ]
+  ],
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions",
+    "needs_review": true,
+    "key_nodes": [
+      "S3",
+      "S5",
+      "S8"
+    ],
+    "revision_provenance": {
+      "human_review_status": "pending",
+      "origin": "synthetic_fixture"
+    }
+  }
+}

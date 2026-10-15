@@ -1,0 +1,22 @@
+{
+  "problem_id": "public_force_01",
+  "title": "小车的合力与运动",
+  "statement": "一辆质量为2.0 kg的小车在水平直轨上由静止出发。向右的恒定牵引力为10.0 N，运动阻力为2.0 N且向左，忽略其他水平方向作用。求：(1)合力的大小和方向；(2)加速度；(3)3.0 s末的速度。",
+  "answer": "取向右为正。F合=10.0−2.0=8.0 N，向右；a=F合/m=4.0 m/s²，向右；v=v0+at=12.0 m/s，向右。",
+  "figures": [],
+  "knowledge_points": [
+    "受力分析",
+    "牛顿第二定律",
+    "匀加速直线运动",
+    "正方向约定"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "AI-authored for public-source demonstration, 2026-10-15",
+    "uses_private_material": false,
+    "human_review_status": "pending",
+    "not_student_research": true,
+    "source": "AI自编公开演示样例",
+    "chapter": "力学基础"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "note": "页面显示名称，按本地源文件名规范化；不改doc_id、文件路径、索引或历史引用。未核验出版社、作者和书目版次，不补写这些信息。",
+  "documents": {
+    "jiaocai-1-shangce": {"title": "大学物理学（上册，第五版）", "source_filename": "教材-1-大学物理学(上册)第五版_可搜索.pdf"},
+    "jiaocai-2-xiache": {"title": "大学物理学（下册，第五版）", "source_filename": "教材-2-大学物理学(下册)第五版_可搜索.pdf"},
+    "jiaocai-1-jieda": {"title": "大学物理学·学习辅导与习题解答（第五版）", "source_filename": "教材-1-大学物理学(学习辅导与习题解答)第五版_可搜索.pdf"},
+    "jiaocai-3-lixue": {"title": "新概念物理教程·力学", "source_filename": "教材-3-新概念物理教程 力学_可搜索.pdf"},
+    "jiaocai-4-rexue": {"title": "新概念物理教程·热学", "source_filename": "教材-4-新概念物理教程 热学_可搜索.pdf"},
+    "jiaocai-5-dianci": {"title": "新概念物理教程·电磁学", "source_filename": "教材-5-新概念物理教程 电磁学_可搜索.pdf"},
+    "jiaocai-6-guangxue": {"title": "新概念物理教程·光学", "source_filename": "教材-6-新概念物理教程 光学_可搜索.pdf"},
+    "jiaocai-7-liangzi": {"title": "新概念物理教程·量子物理", "source_filename": "教材-7-新概念物理教程 量子物理_可搜索.pdf"}
+  }
+}

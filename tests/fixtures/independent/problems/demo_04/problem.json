@@ -1,0 +1,18 @@
+{
+  "problem_id": "demo_04",
+  "title": "振动分支接口（合成测试题）",
+  "statement": "理想弹簧振子作简谐运动，可由能量方程或振幅关系求最大位移。两种方法是替代路线；给出位移大小并核对单位。",
+  "answer": "参考关系：合外力等于质量乘加速度。",
+  "figures": [],
+  "knowledge_points": [
+    "牛顿第二定律",
+    "受力分析"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions"
+  }
+}

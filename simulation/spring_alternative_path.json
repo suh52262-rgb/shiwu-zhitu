@@ -1,0 +1,65 @@
+{
+  "case_id": "spring_alternative_path",
+  "title": "Case E 非标准合理解法学生",
+  "profile": "不走默认的能量法，改用简谐运动法求分离速度，属于合理替代路径。",
+  "notes": "任务书 P12 Case E。Graph 在 S5 处分叉出 S6a（能量法）与 S6b（简谐运动法），两条都是 valid_paths。期望：系统接受替代路径、不判为错误，visited 走 S6b 而非 S6a，最终同样收尾。",
+  "problem_id": "phy_002",
+  "student_id": "sim_alt_path",
+  "steps": [
+    {
+      "input": "P、Q 开始时一起运动，是一个两体系统。",
+      "idle_time": 5,
+      "note": "起步",
+      "expected": {"nodes": ["S1", "S2"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离的临界条件是接触力 N=0，因为 P 只能推不能拉。",
+      "idle_time": 10,
+      "note": "分离条件",
+      "expected": {"nodes": ["S3"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "对 Q：N = m2·a；N=0 → a=0 → x=0，所以弹簧恢复原长时分离。",
+      "idle_time": 12,
+      "note": "单独分析 Q 并定位置",
+      "expected": {"nodes": ["S4", "S5"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "我不用能量法：共同运动阶段是简谐运动，ω=√(k/(m1+m2))，初始振幅为 d，平衡位置处速度最大，所以 v=ωd=d·√(k/(m1+m2))。",
+      "idle_time": 25,
+      "note": "走替代路径 S6b（简谐运动法）",
+      "expected": {"nodes": ["S6b", "S7"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离后 Q 做匀速运动，新的振动系统只有弹簧和 P。",
+      "idle_time": 15,
+      "note": "系统边界变化",
+      "expected": {"nodes": ["S8"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离瞬间 x0=0、v0=v，这是 P 的新初始条件。",
+      "idle_time": 14,
+      "note": "新初始条件",
+      "expected": {"nodes": ["S9"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "由 1/2·k·A² = 1/2·m1·v² 得 A = d·√(m1/(m1+m2))。",
+      "idle_time": 18,
+      "note": "新振幅",
+      "expected": {"nodes": ["S10"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "所以 P 的能量 E = 1/2·m1·v² = m1·k·d²/(2(m1+m2))。",
+      "idle_time": 12,
+      "note": "收尾",
+      "expected": {"nodes": ["S11"], "error": false, "complete": true, "hint_level": 0}
+    }
+  ],
+  "expected_summary": {
+    "finished": true,
+    "visited_path": ["S1", "S2", "S3", "S4", "S5", "S6b", "S7", "S8", "S9", "S10", "S11"],
+    "visited_excludes": ["S6a"],
+    "mistakes_min": 0,
+    "max_hint_level": 0
+  }
+}

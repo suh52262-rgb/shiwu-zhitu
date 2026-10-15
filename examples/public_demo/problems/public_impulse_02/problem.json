@@ -1,0 +1,22 @@
+{
+  "problem_id": "public_impulse_02",
+  "title": "反向运动中的冲量",
+  "statement": "一个质量为0.50 kg的小车沿直线向右运动，初速度为3.0 m/s。一次持续0.20 s的相互作用后，小车向左以1.0 m/s运动。求这段时间内：(1)小车所受合外力的冲量；(2)合外力的平均值。可选择一致的正方向。",
+  "answer": "取向右为正，v0=+3.0 m/s，v1=−1.0 m/s。I=m(v1−v0)=0.50×(−1.0−3.0)=−2.0 N·s，即大小2.0 N·s、向左。平均合力=I/0.20=−10.0 N，即大小10.0 N、向左。不要求瞬时力恒定。",
+  "figures": [],
+  "knowledge_points": [
+    "动量定理",
+    "冲量",
+    "平均力",
+    "正方向约定"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "AI-authored for public-source demonstration, 2026-10-15",
+    "uses_private_material": false,
+    "human_review_status": "pending",
+    "not_student_research": true,
+    "source": "AI自编公开演示样例",
+    "chapter": "力学基础"
+  }
+}

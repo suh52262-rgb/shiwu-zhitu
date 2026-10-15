@@ -1,0 +1,88 @@
+name: tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TEST_OFFLINE: "1"
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      PYTHONPATH: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest tests -m "not real_db and not local_asset" -q --junitxml=artifacts/offline.xml
+      - run: python scripts/check_test_report.py artifacts/offline.xml --minimum 1000 --maximum-xfails 1
+      - run: python -m pip freeze > artifacts/dependencies.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offline-evidence
+          path: artifacts/
+  services:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      PYTHONPATH: backend
+      CI_ISOLATED_SERVICES: "1"
+      POSTGRES_HOST: 127.0.0.1
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: shiwu_ci
+      POSTGRES_PASSWORD: disposable_ci_password
+      POSTGRES_DB: shiwu_ci
+      QDRANT_URL: http://127.0.0.1:6333
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: shiwu_ci
+          POSTGRES_PASSWORD: disposable_ci_password
+          POSTGRES_DB: shiwu_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U shiwu_ci -d shiwu_ci"
+          --health-interval 5s --health-timeout 3s --health-retries 10
+      qdrant:
+        image: qdrant/qdrant:v1.12.4
+        ports:
+          - 6333:6333
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Wait for Qdrant
+        run: |
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:6333/readyz; then exit 0; fi
+            sleep 2
+          done
+          exit 1
+      - run: python scripts/init_db.py
+      - run: python scripts/ci_service_smoke.py
+      - run: python -m pytest tests -m real_db -q --junitxml=artifacts/services.xml
+      - run: python scripts/check_test_report.py artifacts/services.xml --minimum 26 --maximum-xfails 0
+      - name: API startup smoke
+        run: |
+          python -c "from fastapi.testclient import TestClient; from app.main import app; c=TestClient(app); assert c.get('/health').status_code == 200; assert c.get('/problems').status_code == 200"
+      - run: python -m pip freeze > artifacts/dependencies.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: services-evidence
+          path: artifacts/

@@ -1,0 +1,13 @@
+{
+  "metric": "diagnosis",
+  "origin": "ai_authored_synthetic_test_fixture",
+  "cases": [
+    {
+      "id": "unit-diagnosis",
+      "student_input": "质量2kg，力8N，a=4m/s²。",
+      "expected": {
+        "correct": true
+      }
+    }
+  ]
+}

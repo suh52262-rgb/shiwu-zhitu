@@ -1,0 +1,46 @@
+{
+  "problem_id": "phy_002",
+  "metric": "hint_quality",
+  "description": "合成单元测试；max_len为健全性上界而非产品契约，不评模型质量。",
+  "cases": [
+    {
+      "id": "ht_001",
+      "policy_input": {
+        "correct": false,
+        "consecutive_failures": 1,
+        "current_hint_level": 0
+      },
+      "expected": {
+        "level": 1,
+        "max_len": 120
+      }
+    },
+    {
+      "id": "ht_002",
+      "policy_input": {
+        "request_hint": true,
+        "correct": false,
+        "consecutive_failures": 4,
+        "current_hint_level": 4
+      },
+      "expected": {
+        "level": 5,
+        "max_len": 1200
+      }
+    },
+    {
+      "id": "ht_003",
+      "policy_input": {
+        "request_hint": true,
+        "correct": false,
+        "consecutive_failures": 4,
+        "current_hint_level": 4
+      },
+      "expected": {
+        "level": 5,
+        "max_len": 1200,
+        "max_len_basis": "沿用历史实测计数事实：411至824字，极差87%；这里只守上界，不是本合成数据的新实测。"
+      }
+    }
+  ]
+}

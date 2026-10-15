@@ -1,0 +1,88 @@
+{
+  "problem_id": "public_impulse_02",
+  "nodes": [
+    {
+      "id": "S1",
+      "name": "建立一致的速度符号",
+      "type": "key_reasoning",
+      "description": "取向右为正时v0=+3.0 m/s、v1=−1.0 m/s。反向选轴也可，不能仅凭正负判错。",
+      "knowledge_points": [
+        "正方向约定"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2a",
+      "name": "路线A：先求动量变化",
+      "type": "calculation",
+      "description": "I=m(v1−v0)=−2.0 N·s，平均合力=I/0.20=−10.0 N。",
+      "knowledge_points": [
+        "动量定理",
+        "冲量",
+        "平均力"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2b",
+      "name": "路线B：先求平均加速度",
+      "type": "calculation",
+      "description": "a平均=(v1−v0)/0.20=−20.0 m/s²，平均合力=m a平均=−10.0 N，I=平均合力×0.20=−2.0 N·s。这是时间平均关系，不要求瞬时力恒定。",
+      "knowledge_points": [
+        "平均力",
+        "冲量"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3",
+      "name": "核对两项结果与物理方向",
+      "type": "result",
+      "description": "I大小2.0 N·s，平均合力大小10.0 N，均向左。任选一条路线完成即可；另一条路线不作为额外必答。",
+      "knowledge_points": [
+        "正方向约定",
+        "冲量",
+        "平均力"
+      ],
+      "common_errors": []
+    }
+  ],
+  "edges": [
+    [
+      "S1",
+      "S2a"
+    ],
+    [
+      "S1",
+      "S2b"
+    ],
+    [
+      "S2a",
+      "S3"
+    ],
+    [
+      "S2b",
+      "S3"
+    ]
+  ],
+  "valid_paths": [
+    [
+      "S1",
+      "S2a",
+      "S3"
+    ],
+    [
+      "S1",
+      "S2b",
+      "S3"
+    ]
+  ],
+  "metadata": {
+    "origin": "AI-authored for public-source demonstration, 2026-10-15",
+    "uses_private_material": false,
+    "human_review_status": "pending",
+    "not_student_research": true,
+    "needs_review": true,
+    "source": "AI自编；规则校验不等于教师批准"
+  }
+}

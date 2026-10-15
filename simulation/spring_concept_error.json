@@ -1,0 +1,86 @@
+{
+  "case_id": "spring_concept_error",
+  "title": "Case C 概念错误学生",
+  "profile": "在关键节点出现典型概念错误（E2、E4），经提示后能自行修正。",
+  "notes": "任务书 P12 Case C / 第 15 节 Step 5。两处典型错误：① E2 断言分离位置但无 N=0 推理；② E4 认为分离后振幅仍是 d（忽略系统边界变化）。两次都应被定位到具体节点并给出提示，学生修正后继续。",
+  "problem_id": "phy_002",
+  "student_id": "sim_concept",
+  "steps": [
+    {
+      "input": "P、Q 开始时一起运动，可视为整体。",
+      "idle_time": 5,
+      "note": "起步",
+      "expected": {"nodes": ["S1", "S2"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "两者分离时弹簧刚好恢复原长。",
+      "idle_time": 22,
+      "note": "E2 概念错误：只给结论不论证 → 期望 L1 方向提示",
+      "expected": {
+        "nodes": ["S5"],
+        "missing_min": 1,
+        "error": true,
+        "issue_type": "concept",
+        "issue": "把分离条件当成结论直接使用，未说明 N=0",
+        "concept": "物体分离条件",
+        "hint_level": 1
+      }
+    },
+    {
+      "input": "分离的条件是 P、Q 间接触力 N=0；对 Q 有 N=m2·a，故 a=0，再由 a=-kx/(m1+m2) 得 x=0。",
+      "idle_time": 18,
+      "note": "接受提示后补齐推理",
+      "expected": {"nodes": ["S3", "S4", "S5"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "能量守恒：1/2·k·d² = 1/2·(m1+m2)·v²，v = d·√(k/(m1+m2))。",
+      "idle_time": 20,
+      "note": "分离速度",
+      "expected": {"nodes": ["S6a", "S7"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离后 Q 匀速离开，振动系统只剩弹簧和 P。",
+      "idle_time": 15,
+      "note": "识别新系统",
+      "expected": {"nodes": ["S8"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离瞬间 P 在弹簧原长位置，速度是 v。",
+      "idle_time": 12,
+      "note": "新初始条件",
+      "expected": {"nodes": ["S9"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离后 P 的振幅还是 d。",
+      "idle_time": 35,
+      "note": "E4 经典错误：忽略系统边界变化 → 期望定位到 S10 并提示",
+      "expected": {
+        "attempted": ["S10"],
+        "error": true,
+        "issue_type": "concept",
+        "issue": "忽略分离后系统边界变化，仍沿用原振幅",
+        "concept": "简谐运动振幅",
+        "hint_level": 1
+      }
+    },
+    {
+      "input": "对，分离后振子只剩 P：1/2·k·A² = 1/2·m1·v²，所以 A = d·√(m1/(m1+m2))，比 d 小。",
+      "idle_time": 25,
+      "note": "修正后给出正确振幅",
+      "expected": {"nodes": ["S10"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "P 的能量 E = 1/2·m1·v² = m1·k·d²/(2(m1+m2))，分离时 Q 带走了一部分动能。",
+      "idle_time": 16,
+      "note": "收尾",
+      "expected": {"nodes": ["S11"], "error": false, "complete": true, "hint_level": 0}
+    }
+  ],
+  "expected_summary": {
+    "finished": true,
+    "visited_path": ["S1", "S2", "S3", "S4", "S5", "S6a", "S7", "S8", "S9", "S10", "S11"],
+    "mistakes_min": 2,
+    "hints_min": 2,
+    "max_hint_level": 2
+  }
+}

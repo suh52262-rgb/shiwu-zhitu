@@ -1,0 +1,117 @@
+{
+  "case_id": "spring_stuck_student",
+  "title": "Case D 卡顿学生",
+  "profile": "长时间停顿、反复改写同一处、多次请求提示，需要逐级加码才推得动。",
+  "notes": "任务书 P12 Case D。用 idle_time / rewrite_count / request_hint 三个信号驱动卡顿检测与 Hint Policy：期望卡顿分升高、提示级别逐轮升级，并在学生反复请求后给到 L5 完整讲解。",
+  "problem_id": "phy_002",
+  "student_id": "sim_stuck",
+  "steps": [
+    {
+      "input": "P、Q 一开始一起运动。",
+      "idle_time": 5,
+      "note": "起步",
+      "expected": {"nodes": ["S1", "S2"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离条件……应该是某个力等于零吧，但我不确定是哪个力。",
+      "idle_time": 55,
+      "rewrite_count": 3,
+      "note": "长时间停顿 + 反复改写 → 卡顿分升高，L1 方向提示",
+      "expected": {
+        "attempted": ["S3"],
+        "error": true,
+        "issue_type": "concept",
+        "issue": "说不清分离对应哪个力",
+        "concept": "物体分离条件",
+        "hint_min_level": 1
+      }
+    },
+    {
+      "input": "分离条件……应该是某个力等于零吧，但我不确定是哪个力。",
+      "idle_time": 60,
+      "rewrite_count": 2,
+      "note": "改了又改还是同一点 → 级别升到 L2",
+      "expected": {
+        "attempted": ["S3"],
+        "error": true,
+        "issue_type": "concept",
+        "issue": "仍在原地打转",
+        "concept": "物体分离条件",
+        "hint_min_level": 2
+      }
+    },
+    {
+      "input": "分离条件……某个力等于零？还是不知道是哪个力。",
+      "idle_time": 65,
+      "rewrite_count": 4,
+      "request_hint": true,
+      "note": "主动请求提示 → L3 方法提示",
+      "expected": {
+        "attempted": ["S3"],
+        "error": true,
+        "issue_type": "concept",
+        "issue": "仍无法确定分离条件",
+        "concept": "物体分离条件",
+        "hint_min_level": 3
+      }
+    },
+    {
+      "input": "还是想不出来，能不能直接讲一下？",
+      "idle_time": 70,
+      "rewrite_count": 2,
+      "request_hint": true,
+      "note": "连续失败 4 轮且再次主动请求 → L5 完整讲解",
+      "expected": {
+        "attempted": ["S3"],
+        "error": true,
+        "issue_type": "concept",
+        "issue": "多轮提示后仍未推进",
+        "concept": "物体分离条件",
+        "hint_level": 5
+      }
+    },
+    {
+      "input": "明白了：P 只能推 Q 不能拉 Q，所以 N=0 就是分离条件。",
+      "idle_time": 20,
+      "note": "接受讲解后推进",
+      "expected": {"nodes": ["S3"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "对 Q 用牛顿第二定律，N=m2·a，N=0 所以 a=0，即弹簧恢复原长时分离。",
+      "idle_time": 30,
+      "note": "补齐推理",
+      "expected": {"nodes": ["S4", "S5"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "用能量守恒求分离速度：1/2·k·d² = 1/2·(m1+m2)·v²。",
+      "idle_time": 28,
+      "note": "分离速度",
+      "expected": {"nodes": ["S6a", "S7"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离后系统只剩弹簧和 P，要重新定初始条件 x0=0、v0=v。",
+      "idle_time": 24,
+      "note": "系统边界与初始条件",
+      "expected": {"nodes": ["S8", "S9"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "1/2·k·A² = 1/2·m1·v²，得到 A = d·√(m1/(m1+m2))。",
+      "idle_time": 26,
+      "note": "新振幅",
+      "expected": {"nodes": ["S10"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "能量 E = 1/2·m1·v² = m1·k·d²/(2(m1+m2))。",
+      "idle_time": 18,
+      "note": "收尾",
+      "expected": {"nodes": ["S11"], "error": false, "complete": true, "hint_level": 0}
+    }
+  ],
+  "expected_summary": {
+    "finished": true,
+    "visited_contains": ["S1", "S2", "S3", "S4", "S5", "S6a", "S7", "S8", "S9", "S10", "S11"],
+    "mistakes_min": 1,
+    "hints_min": 4,
+    "min_hint_level": 5
+  }
+}

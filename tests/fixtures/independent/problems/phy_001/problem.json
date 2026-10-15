@@ -1,0 +1,19 @@
+{
+  "problem_id": "phy_001",
+  "title": "斜面下滑 · 机械能核查（合成测试题）",
+  "statement": "一个测试物块沿粗糙斜面由静止滑下，重力做正功、摩擦力做负功。请列动能定理并说明机械能守恒的适用条件。",
+  "answer": "mgh+Wf=mv²/2；有摩擦耗散时不能直接使用机械能守恒。",
+  "figures": [],
+  "knowledge_points": [
+    "动能定理",
+    "机械能守恒条件",
+    "摩擦力做功"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions"
+  }
+}

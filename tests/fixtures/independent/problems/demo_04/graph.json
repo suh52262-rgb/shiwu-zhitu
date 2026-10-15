@@ -1,0 +1,154 @@
+{
+  "problem_id": "demo_04",
+  "nodes": [
+    {
+      "id": "S1",
+      "name": "测试步骤S1",
+      "type": "key_reasoning",
+      "description": "说明该阶段的研究对象与约束。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2",
+      "name": "测试步骤S2",
+      "type": "calculation",
+      "description": "说明该阶段的研究对象与约束。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3",
+      "name": "测试步骤S3",
+      "type": "key_reasoning",
+      "description": "说明该阶段的研究对象与约束。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S4",
+      "name": "测试步骤S4",
+      "type": "calculation",
+      "description": "说明该阶段的研究对象与约束。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S5",
+      "name": "测试步骤S5",
+      "type": "modeling",
+      "description": "说明该阶段的研究对象与约束。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S5a",
+      "name": "二次方程路线",
+      "type": "calculation",
+      "description": "由能量关系列方程，取正根得到位移大小。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S5b",
+      "name": "振幅路线",
+      "type": "calculation",
+      "description": "直接使用振幅关系求最大位移大小。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S6",
+      "name": "核对结果",
+      "type": "verification",
+      "description": "两条路线均得到位移大小，只校对已有结果和单位。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    }
+  ],
+  "edges": [
+    [
+      "S1",
+      "S2"
+    ],
+    [
+      "S2",
+      "S3"
+    ],
+    [
+      "S3",
+      "S4"
+    ],
+    [
+      "S4",
+      "S5"
+    ],
+    [
+      "S5",
+      "S5a"
+    ],
+    [
+      "S5",
+      "S5b"
+    ],
+    [
+      "S5a",
+      "S6"
+    ],
+    [
+      "S5b",
+      "S6"
+    ]
+  ],
+  "valid_paths": [
+    [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S5a",
+      "S6"
+    ],
+    [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S5b",
+      "S6"
+    ]
+  ],
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions",
+    "needs_review": true,
+    "key_nodes": [
+      "S5a",
+      "S5b"
+    ],
+    "revision_provenance": {
+      "human_review_status": "pending",
+      "origin": "synthetic_fixture"
+    }
+  }
+}

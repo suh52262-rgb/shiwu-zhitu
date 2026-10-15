@@ -1,0 +1,67 @@
+{
+  "case_id": "spring_missing_reasoning",
+  "title": "Case B 跳步学生",
+  "profile": "结论往往直接给出，但跳过关键推理链，属于典型的 E2 场景。",
+  "notes": "任务书 P12 Case B / 任务书第 15 节 Step 2。第 2 步直接断言'弹簧恢复原长时分离'，缺 N=0 → a=0 → x=0 的推理；系统应指出缺失推理并给方向提示，学生补齐后继续。",
+  "problem_id": "phy_002",
+  "student_id": "sim_missing",
+  "steps": [
+    {
+      "input": "P、Q 开始时一起运动。",
+      "idle_time": 4,
+      "note": "起步正常",
+      "expected": {"nodes": ["S1", "S2"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "弹簧恢复原长时二者分离。",
+      "idle_time": 20,
+      "note": "E2：结论对但完全没有推理链 → 期望指出缺失推理并给 L1 方向提示",
+      "expected": {
+        "nodes": ["S5"],
+        "missing_min": 1,
+        "error": true,
+        "issue_type": "method",
+        "issue": "直接断言分离位置，缺少 N=0 → a=0 → x=0 的推理链",
+        "concept": "物体分离条件",
+        "hint_level": 1
+      }
+    },
+    {
+      "input": "分离时接触力 N=0；对 Q 有 N = m2·a，因此 a=0，即弹簧恢复原长时分离。",
+      "idle_time": 15,
+      "note": "补齐推理链后推进",
+      "expected": {"nodes": ["S3", "S4", "S5"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "由能量守恒 1/2·k·d² = 1/2·(m1+m2)·v²，得 v = d·√(k/(m1+m2))。",
+      "idle_time": 18,
+      "note": "分离速度",
+      "expected": {"nodes": ["S6a", "S7"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "分离后只剩弹簧和 P，Q 匀速离开，所以要按新的初始条件重算 P 的运动。",
+      "idle_time": 16,
+      "note": "系统边界切换",
+      "expected": {"nodes": ["S8", "S9"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "用 1/2·k·A² = 1/2·m1·v² 得 A = d·√(m1/(m1+m2))。",
+      "idle_time": 20,
+      "note": "新振幅",
+      "expected": {"nodes": ["S10"], "error": false, "hint_level": 0}
+    },
+    {
+      "input": "能量 E = 1/2·m1·v² = m1·k·d²/(2(m1+m2))。",
+      "idle_time": 12,
+      "note": "收尾",
+      "expected": {"nodes": ["S11"], "error": false, "complete": true, "hint_level": 0}
+    }
+  ],
+  "expected_summary": {
+    "finished": true,
+    "visited_path": ["S1", "S2", "S3", "S4", "S5", "S6a", "S7", "S8", "S9", "S10", "S11"],
+    "mistakes_min": 1,
+    "hints_min": 1,
+    "max_hint_level": 2
+  }
+}

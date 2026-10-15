@@ -1,0 +1,548 @@
+{
+  "schema_version": "t4_source_v1",
+  "origin": "ai_authored",
+  "fixture_only": true,
+  "purpose": "unit-test protocol counts and fail-closed gates; NOT a new holdout or model-quality dataset",
+  "problems": [
+    {
+      "id": "unit_problem_0",
+      "split": "development",
+      "origin": "ai_authored",
+      "statement": "合成测试：2kg物块受向右8N合力，求加速度。",
+      "reference_solution": "a=8/2=4m/s²，向右。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "cases": [
+        {
+          "id": "unit_case_0_correct",
+          "category": "correct",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=8/2=4m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_0_legal_equivalent",
+          "category": "legal_equivalent",
+          "origin": "ai_authored",
+          "rounds": [
+            "由F=ma，a=4m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_0_missing_reasoning",
+          "category": "missing_reasoning",
+          "origin": "ai_authored",
+          "rounds": [
+            "加速度为4m/s²。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_0_explicit_error",
+          "category": "explicit_error",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=5m/s²。"
+          ],
+          "expected": {
+            "judgment": "observed_error",
+            "minimum_observed_errors": 1,
+            "maximum_observed_errors": 1
+          }
+        },
+        {
+          "id": "unit_case_0_ocr_ambiguity",
+          "category": "ocr_ambiguity",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=?，符号不清。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_0_truncated_cross_round",
+          "category": "truncated_cross_round",
+          "origin": "ai_authored",
+          "rounds": [
+            "F=ma。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "unit_problem_1",
+      "split": "development",
+      "origin": "ai_authored",
+      "statement": "合成测试：2kg物块受向右10N合力，求加速度。",
+      "reference_solution": "a=10/2=5m/s²，向右。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "cases": [
+        {
+          "id": "unit_case_1_correct",
+          "category": "correct",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=10/2=5m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_1_legal_equivalent",
+          "category": "legal_equivalent",
+          "origin": "ai_authored",
+          "rounds": [
+            "由F=ma，a=5m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_1_missing_reasoning",
+          "category": "missing_reasoning",
+          "origin": "ai_authored",
+          "rounds": [
+            "加速度为5m/s²。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_1_explicit_error",
+          "category": "explicit_error",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=6m/s²。"
+          ],
+          "expected": {
+            "judgment": "observed_error",
+            "minimum_observed_errors": 1,
+            "maximum_observed_errors": 1
+          }
+        },
+        {
+          "id": "unit_case_1_ocr_ambiguity",
+          "category": "ocr_ambiguity",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=?，符号不清。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_1_truncated_cross_round",
+          "category": "truncated_cross_round",
+          "origin": "ai_authored",
+          "rounds": [
+            "F=ma。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "unit_problem_2",
+      "split": "development",
+      "origin": "ai_authored",
+      "statement": "合成测试：2kg物块受向右12N合力，求加速度。",
+      "reference_solution": "a=12/2=6m/s²，向右。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "cases": [
+        {
+          "id": "unit_case_2_correct",
+          "category": "correct",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=12/2=6m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_2_legal_equivalent",
+          "category": "legal_equivalent",
+          "origin": "ai_authored",
+          "rounds": [
+            "由F=ma，a=6m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_2_missing_reasoning",
+          "category": "missing_reasoning",
+          "origin": "ai_authored",
+          "rounds": [
+            "加速度为6m/s²。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_2_explicit_error",
+          "category": "explicit_error",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=7m/s²。"
+          ],
+          "expected": {
+            "judgment": "observed_error",
+            "minimum_observed_errors": 1,
+            "maximum_observed_errors": 1
+          }
+        },
+        {
+          "id": "unit_case_2_ocr_ambiguity",
+          "category": "ocr_ambiguity",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=?，符号不清。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_2_truncated_cross_round",
+          "category": "truncated_cross_round",
+          "origin": "ai_authored",
+          "rounds": [
+            "F=ma。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "unit_problem_3",
+      "split": "development",
+      "origin": "ai_authored",
+      "statement": "合成测试：2kg物块受向右14N合力，求加速度。",
+      "reference_solution": "a=14/2=7m/s²，向右。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "cases": [
+        {
+          "id": "unit_case_3_correct",
+          "category": "correct",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=14/2=7m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_3_legal_equivalent",
+          "category": "legal_equivalent",
+          "origin": "ai_authored",
+          "rounds": [
+            "由F=ma，a=7m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_3_missing_reasoning",
+          "category": "missing_reasoning",
+          "origin": "ai_authored",
+          "rounds": [
+            "加速度为7m/s²。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_3_explicit_error",
+          "category": "explicit_error",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=8m/s²。"
+          ],
+          "expected": {
+            "judgment": "observed_error",
+            "minimum_observed_errors": 1,
+            "maximum_observed_errors": 1
+          }
+        },
+        {
+          "id": "unit_case_3_ocr_ambiguity",
+          "category": "ocr_ambiguity",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=?，符号不清。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_3_truncated_cross_round",
+          "category": "truncated_cross_round",
+          "origin": "ai_authored",
+          "rounds": [
+            "F=ma。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "unit_problem_4",
+      "split": "holdout",
+      "origin": "ai_authored",
+      "statement": "合成测试：2kg物块受向右16N合力，求加速度。",
+      "reference_solution": "a=16/2=8m/s²，向右。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "cases": [
+        {
+          "id": "unit_case_4_correct",
+          "category": "correct",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=16/2=8m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_4_legal_equivalent",
+          "category": "legal_equivalent",
+          "origin": "ai_authored",
+          "rounds": [
+            "由F=ma，a=8m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_4_missing_reasoning",
+          "category": "missing_reasoning",
+          "origin": "ai_authored",
+          "rounds": [
+            "加速度为8m/s²。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_4_explicit_error",
+          "category": "explicit_error",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=9m/s²。"
+          ],
+          "expected": {
+            "judgment": "observed_error",
+            "minimum_observed_errors": 1,
+            "maximum_observed_errors": 1
+          }
+        },
+        {
+          "id": "unit_case_4_ocr_ambiguity",
+          "category": "ocr_ambiguity",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=?，符号不清。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_4_truncated_cross_round",
+          "category": "truncated_cross_round",
+          "origin": "ai_authored",
+          "rounds": [
+            "F=ma。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "unit_problem_5",
+      "split": "holdout",
+      "origin": "ai_authored",
+      "statement": "合成测试：2kg物块受向右18N合力，求加速度。",
+      "reference_solution": "a=18/2=9m/s²，向右。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "cases": [
+        {
+          "id": "unit_case_5_correct",
+          "category": "correct",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=18/2=9m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_5_legal_equivalent",
+          "category": "legal_equivalent",
+          "origin": "ai_authored",
+          "rounds": [
+            "由F=ma，a=9m/s²，向右。"
+          ],
+          "expected": {
+            "judgment": "no_observed_error",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_5_missing_reasoning",
+          "category": "missing_reasoning",
+          "origin": "ai_authored",
+          "rounds": [
+            "加速度为9m/s²。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_5_explicit_error",
+          "category": "explicit_error",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=10m/s²。"
+          ],
+          "expected": {
+            "judgment": "observed_error",
+            "minimum_observed_errors": 1,
+            "maximum_observed_errors": 1
+          }
+        },
+        {
+          "id": "unit_case_5_ocr_ambiguity",
+          "category": "ocr_ambiguity",
+          "origin": "ai_authored",
+          "rounds": [
+            "a=?，符号不清。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        },
+        {
+          "id": "unit_case_5_truncated_cross_round",
+          "category": "truncated_cross_round",
+          "origin": "ai_authored",
+          "rounds": [
+            "F=ma。"
+          ],
+          "expected": {
+            "judgment": "uncertain",
+            "minimum_observed_errors": 0,
+            "maximum_observed_errors": 0
+          }
+        }
+      ]
+    }
+  ]
+}

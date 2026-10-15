@@ -1,0 +1,20 @@
+{
+  "problem_id": "demo_03",
+  "title": "冲量分支接口（合成测试题）",
+  "statement": "0.50 kg测试小车初速度向右3 m/s，0.20 s后向左1 m/s。求合外力冲量和平均合力，并说明方向。",
+  "answer": "取右为正，I=0.5×(-1-3)=−2 N·s；平均合力=−10 N，均向左。",
+  "figures": [],
+  "knowledge_points": [
+    "冲量",
+    "动量定理（冲量—动量定理）",
+    "平均冲力",
+    "正方向约定"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions"
+  }
+}

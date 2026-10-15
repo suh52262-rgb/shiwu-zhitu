@@ -1,0 +1,47 @@
+{
+  "case_id": "graphless_basic",
+  "title": "Case F 无图题目（Graphless Mode）",
+  "profile": "题目没有 Problem Graph，只能靠 analyze_step 做阶段级判断；学生先把摩擦力漏掉误用机械能守恒，再给出缺依据的结论，最后补齐依据并答完两问。",
+  "notes": "任务书 P23。phy_001（斜面题，含两个小问）在题库里没有 graph.json，是 graphless 题目。本剧本证明 Graphless Mode 不是占位：即使没有图，也要能判断阶段、发现明显错误、指出缺失推理、按连续失败升级提示。全程不应出现任何节点匹配结果。",
+  "problem_id": "phy_001",
+  "student_id": "sim_graphless",
+  "steps": [
+    {
+      "input": "斜面是光滑的，所以下滑过程中机械能守恒，有 mgh = 1/2·m·v²。",
+      "idle_time": 12,
+      "note": "概念错误：题目说的是粗糙斜面，摩擦力在做负功",
+      "expected": {
+        "error": true,
+        "complete": false,
+        "issue_type": "concept",
+        "issue": "题目给出的斜面是粗糙的，摩擦力做负功，机械能不守恒",
+        "concept": "机械能守恒条件",
+        "hint_max_level": 2
+      }
+    },
+    {
+      "input": "（1）机械能不守恒。",
+      "idle_time": 8,
+      "note": "只给了结论，没有给出判断依据",
+      "expected": {
+        "error": false,
+        "complete": false,
+        "missing_min": 1,
+        "missing": ["只说了机械能不守恒，没有说明依据（斜面粗糙、摩擦力做负功）"],
+        "hint_min_level": 1
+      }
+    },
+    {
+      "input": "（1）斜面粗糙，下滑过程中摩擦力对物体做负功，除重力外还有摩擦力做功，所以机械能不守恒。（2）由动能定理 mgh + W_f = 1/2·m·v² − 0，解得 W_f = 1/2·m·v² − mgh。",
+      "idle_time": 10,
+      "note": "补齐依据并答完两个小问",
+      "expected": {"error": false, "complete": true, "hint_max_level": 1}
+    }
+  ],
+  "expected_summary": {
+    "finished": true,
+    "visited_path": [],
+    "mistakes_min": 1,
+    "max_hint_level": 2
+  }
+}

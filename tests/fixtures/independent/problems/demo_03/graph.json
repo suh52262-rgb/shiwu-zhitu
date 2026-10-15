@@ -1,0 +1,122 @@
+{
+  "problem_id": "demo_03",
+  "nodes": [
+    {
+      "id": "S1",
+      "name": "规定坐标方向",
+      "type": "key_reasoning",
+      "description": "规定坐标方向",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2",
+      "name": "选择一条计算路线",
+      "type": "modeling",
+      "description": "选择一条计算路线",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2a",
+      "name": "路线A：动量变化",
+      "type": "calculation",
+      "description": "由动量变化先得到I=−2 N·s。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2b",
+      "name": "路线B：平均加速度",
+      "type": "calculation",
+      "description": "用平均加速度先得到F=−10 N，再得I=−2 N·s。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3",
+      "name": "核对冲量和平均力",
+      "type": "verification",
+      "description": "两条路线任选其一完成两项计算，核对而不要求重复计算平均力。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S4",
+      "name": "说明物理方向",
+      "type": "result",
+      "description": "两项矢量均向左；一致的反向坐标约定也可。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    }
+  ],
+  "edges": [
+    [
+      "S1",
+      "S2"
+    ],
+    [
+      "S2",
+      "S2a"
+    ],
+    [
+      "S2a",
+      "S3"
+    ],
+    [
+      "S3",
+      "S4"
+    ],
+    [
+      "S2",
+      "S2b"
+    ],
+    [
+      "S2b",
+      "S3"
+    ]
+  ],
+  "valid_paths": [
+    [
+      "S1",
+      "S2",
+      "S2a",
+      "S3",
+      "S4"
+    ],
+    [
+      "S1",
+      "S2",
+      "S2b",
+      "S3",
+      "S4"
+    ]
+  ],
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions",
+    "needs_review": true,
+    "key_nodes": [
+      "S2a",
+      "S2b"
+    ],
+    "revision_provenance": {
+      "human_review_status": "pending",
+      "origin": "synthetic_fixture"
+    }
+  }
+}

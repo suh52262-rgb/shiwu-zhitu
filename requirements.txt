@@ -1,0 +1,43 @@
+# 视物知途 Demo 0.1 依赖
+# Web 框架
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# 数据模型与配置
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# 数据库（Phase 4/6 启用）
+SQLAlchemy>=2.0.30
+psycopg[binary]>=3.2.0
+qdrant-client>=1.10.0
+
+# Agent 工作流（Phase 3 启用）
+langgraph>=0.2.0
+langchain-core>=0.2.0
+
+# LLM 统一接口（DeepSeek / Qwen / 任意 OpenAI 兼容网关，Phase 2 启用）
+openai>=1.40.0
+# Anthropic Claude 适配（P17）。**可选依赖**：只有 LLM_PROVIDER=anthropic 才需要，
+# 未安装时选该 provider 会得到明确的 LLMConfigError 提示，不影响其它 provider。
+# 需要时执行：pip install "anthropic>=0.40.0"
+# anthropic>=0.40.0
+
+# 文档解析与工具
+PyMuPDF>=1.24.0
+# 注：sympy 曾在第一阶段列入（预备做公式等价性校验），但全仓无任何 import，
+# 属死依赖，已移除。将来真要做 SymPy 公式验证 Tool 时再加回来。
+
+# 视频抽帧（成员 C 感知层预研：scripts/qwen3vl_video_test.py 直接 import cv2）
+# 用 headless 版本：纯服务端抽帧，不需要 GUI 依赖
+opencv-python-headless>=4.9.0
+
+# 本地 Embedding（BGE，首次运行自动下载模型）
+sentence-transformers>=3.0
+
+# 前端 Demo
+streamlit>=1.37.0
+
+# 测试
+pytest>=8.2.0
+httpx>=0.27.0

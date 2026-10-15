@@ -1,0 +1,18 @@
+{
+  "problem_id": "phy_003",
+  "title": "恒力计算（合成测试题）",
+  "statement": "质量2 kg的物体在光滑水平面上受向右8 N恒力，求加速度。",
+  "answer": "a=8/2=4 m/s²，向右。",
+  "figures": [],
+  "knowledge_points": [
+    "牛顿第二定律",
+    "受力分析"
+  ],
+  "difficulty": 2,
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "problem_id": "demo_02",
+  "nodes": [
+    {
+      "id": "S1",
+      "name": "画受力与正向",
+      "type": "modeling",
+      "description": "画受力与正向",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S2",
+      "name": "写约束",
+      "type": "key_reasoning",
+      "description": "写约束",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3",
+      "name": "静止的平衡条件",
+      "type": "calculation",
+      "description": "静止的平衡条件",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3a",
+      "name": "逐体列符号式",
+      "type": "calculation",
+      "description": "F−T=m1a，T−m2g=m2a。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S3b",
+      "name": "系统列符号式",
+      "type": "calculation",
+      "description": "F−m2g=(m1+m2)a。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S4",
+      "name": "核对两条方程",
+      "type": "verification",
+      "description": "两条路线得到相同的共同加速度；这里核对而不强制重复数值计算。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S5",
+      "name": "回看张力结果",
+      "type": "result",
+      "description": "回看张力结果",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "S6",
+      "name": "分析约束解除",
+      "type": "result",
+      "description": "T=0时a=−g，F=−m1g；松弛后不可继续要求共同加速度。",
+      "knowledge_points": [
+        "牛顿第二定律"
+      ],
+      "common_errors": []
+    }
+  ],
+  "edges": [
+    [
+      "S1",
+      "S2"
+    ],
+    [
+      "S2",
+      "S3"
+    ],
+    [
+      "S3",
+      "S3a"
+    ],
+    [
+      "S3a",
+      "S4"
+    ],
+    [
+      "S4",
+      "S5"
+    ],
+    [
+      "S5",
+      "S6"
+    ],
+    [
+      "S3",
+      "S3b"
+    ],
+    [
+      "S3b",
+      "S4"
+    ]
+  ],
+  "valid_paths": [
+    [
+      "S1",
+      "S2",
+      "S3",
+      "S3a",
+      "S4",
+      "S5",
+      "S6"
+    ],
+    [
+      "S1",
+      "S2",
+      "S3",
+      "S3b",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  ],
+  "metadata": {
+    "origin": "ai_authored_synthetic_test_fixture",
+    "purpose": "deterministic software regression; not model quality evidence",
+    "human_review_status": "not_claimed",
+    "legacy_ids": "preserved only as test interface identifiers; not the original questions",
+    "needs_review": true,
+    "key_nodes": [],
+    "revision_provenance": {
+      "human_review_status": "pending",
+      "origin": "synthetic_fixture"
+    }
+  }
+}

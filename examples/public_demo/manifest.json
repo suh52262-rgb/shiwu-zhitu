@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "dataset_id": "public_demo_ai_20261015_v1",
+  "provenance": {
+    "origin": "AI-authored for public-source demonstration, 2026-10-15",
+    "uses_private_material": false,
+    "human_review_status": "pending",
+    "not_student_research": true
+  },
+  "license_status": "AGPL-3.0-only for these project-authored synthetic examples; no third-party textbook permission asserted",
+  "problem_ids": [
+    "public_force_01",
+    "public_impulse_02"
+  ],
+  "files": {
+    "problems/public_force_01/problem.json": {
+      "sha256": "734dbd1cdd9a01f69d634fc81639d9ba38d2af7e163a81736c2a5af81a93f0a5",
+      "bytes": 900
+    },
+    "problems/public_force_01/graph.json": {
+      "sha256": "fa9d8c821f79a332eb8f9c1c68f03b8b4880fb7f1d0d737d52c30aef20eeed2e",
+      "bytes": 1746
+    },
+    "problems/public_impulse_02/problem.json": {
+      "sha256": "ee0f0afc4d93f3e9d87d8f623228b1506d1212b8adb252c7219f24adb73b559a",
+      "bytes": 1000
+    },
+    "problems/public_impulse_02/graph.json": {
+      "sha256": "28876867f8bb3e63d9865c2ef365e8da787677b7c6675e3ef1b906098b5f2eeb",
+      "bytes": 2052
+    }
+  },
+  "evaluation_scope": "synthetic engineering demonstration only; not T4, holdout or real student evidence"
+}
