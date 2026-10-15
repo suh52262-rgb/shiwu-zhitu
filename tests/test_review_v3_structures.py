@@ -460,7 +460,7 @@ def test_catalog_handles_no_evidence():
 
 def test_v3_prompt_exists_and_keeps_v2_content():
     """v3 是**在 v2 之上追加**的 —— v2 的结论核对等能力不能丢。"""
-    pr = Path("D:/智能体/prompts/review")
+    pr = Path(__file__).resolve().parents[1] / "prompts/review"
     v2 = (pr / "v2.md").read_text(encoding="utf-8")
     v3 = (pr / "v3.md").read_text(encoding="utf-8")
     assert "v3 新增" in v3 and "引用证据 ID" in v3
@@ -500,13 +500,13 @@ def test_v3_is_implemented_but_not_the_default():
         "默认被改成 v3 了 —— 开发集已通过（裁决后），但**留出集仍是 0/36、未解锁**；"
         "按契约，切默认要等留出集也通过。若确要切，请同时更新 prompt_registry 与本测试的理由。")
     # v3 提示词**确实存在**（不是"没做"，是"没启用"）
-    assert (Path("D:/智能体/prompts/review/v3.md")).is_file(), "v3 提示词不见了"
+    assert (Path(__file__).resolve().parents[1] / "prompts/review/v3.md").is_file(), "v3 提示词不见了"
     # ⚠️ **理由本身也要被盯住**：代码里那段「为什么不切默认」的注释，
     #    必须写明**当前真正生效的条件**（要等留出集），而不是停在旧阶段。
     #    实测踩到过：注释写着「那个开发集还没建」，而开发集早已跑过四轮。
     #    ⚠️ 不要断言「不许出现『还没建』」—— 我更正时**引用了那句旧话**，
     #      那样的断言会把"记录更正"本身判成违规（我第一版就这么错了）。
-    registry_src = (Path("D:/智能体/backend/app/agent/prompt_registry.py")
+    registry_src = ((Path(__file__).resolve().parents[1] / "backend/app/agent/prompt_registry.py")
                     .read_text(encoding="utf-8"))
     assert "留出集" in registry_src, "prompt_registry 没说清「要等留出集」这个当前条件"
     assert "开发集" in registry_src, "prompt_registry 没交代开发集的状态"

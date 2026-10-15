@@ -1,7 +1,7 @@
 {
-  "kind": "source_candidate_not_publicly_released",
+  "kind": "published_source_snapshot",
   "source_commit": "f1a99bacea6899d620fb76aab92e6df766a40167",
-  "source_bytes": "committed Git blobs; supplied dependency lock recorded below",
+  "source_bytes": "Initial committed source export plus synchronized publication documentation; per-file hashes below",
   "public_demo": "examples/public_demo only; AI-authored; human review pending",
   "project_license": "AGPL-3.0-only",
   "public_configuration": [
@@ -22,9 +22,9 @@
     "Git history"
   ],
   "limitations": [
-    "not a full data deployment",
-    "public release requires source/history/license review",
-    "no remote push performed"
+    "source-only publication; not a full data deployment",
+    "third-party and external asset permissions remain scoped separately",
+    "local validation is not a new-computer or complete cross-platform deployment claim"
   ],
   "credential_scan": {
     "unreviewed_findings": 0,
@@ -86,8 +86,8 @@
       "sha256": "93608e3a44239955ae1ccdf83ecf2be895341ab988739d380b086813dc43e0d5"
     },
     ".github/workflows/tests.yml": {
-      "bytes": 2906,
-      "sha256": "4257cb9830e961367260bcc7c82ead19a0ab388f3b7bbced785aee837df2590d"
+      "bytes": 3028,
+      "sha256": "333e5ac361fdf4022229f3927c02410ffb67e6c7fcf17b29702c885b782b5ba7"
     },
     ".gitignore": {
       "bytes": 2607,
@@ -698,8 +698,8 @@
       "sha256": "80fc3d74285246b3afe5705aa83eae3e8632b24e6291a17fb8c74a528f1d9cbf"
     },
     "deployment/GitHub源码快速开始.md": {
-      "bytes": 3954,
-      "sha256": "36b5fd034d709ac7b053a62f23973dfaba3c9a95d8c68e8dbaf1aba81cd219e2"
+      "bytes": 4224,
+      "sha256": "02809f51b292d51650c99fd121fbf86552b9f060797daf03f73713196608f1c4"
     },
     "deployment/Preflight.ps1": {
       "bytes": 700,
@@ -766,8 +766,8 @@
       "sha256": "24dba5f002ceccb4d5c2730de8bb9ddbce010b0e5ecf7617e12bfed49697d86a"
     },
     "deployment/发布许可与隐私边界.md": {
-      "bytes": 2362,
-      "sha256": "b81040f816b663177b4e550c8014ee0cbcc36c44db1bb0710ba5bf596d222ebe"
+      "bytes": 2721,
+      "sha256": "39bffcfc72de20ca07789362ce3fc43c98876461a1fff4ae49571a39f9bfaacc"
     },
     "deployment/快速部署.md": {
       "bytes": 3857,
@@ -1938,8 +1938,8 @@
       "sha256": "69e7896aaf444d56ac2c975c5308817cc3e2046e985225fe037fd6700e2b1c2c"
     },
     "tests/test_first_use.py": {
-      "bytes": 1703,
-      "sha256": "00b27c04022d5c2c2c43cd6bd3d032a40b9b3214981261e685e538ae750c0503"
+      "bytes": 1773,
+      "sha256": "276ed35a82b267c6fd8ff01762a4edf2e78e62dbc176b81be66bd6e9da77eb2b"
     },
     "tests/test_fixture_independence.py": {
       "bytes": 2054,
@@ -2418,8 +2418,8 @@
       "sha256": "09d8148727368611a009bd7c1149870df785b6eac6f2b954b197ce66e70c4272"
     },
     "tests/test_review_v3_structures.py": {
-      "bytes": 74662,
-      "sha256": "f27637346bb6fc6da81c0fe2eed152780aae63164be02085322f09a73c35643e"
+      "bytes": 74721,
+      "sha256": "6b8de4947f4706d5c9d5ef2bade44cc55917256de0566a1817d7cb4b5c656cc7"
     },
     "tests/test_run_pruning.py": {
       "bytes": 4779,
@@ -4006,8 +4006,24 @@
       "sha256": "b67d9a2cecd58c93df1a073c1ab9f122adfc6a6d13eadc0cb55f29795c050c94"
     },
     "README.md": {
-      "bytes": 3954,
-      "sha256": "36b5fd034d709ac7b053a62f23973dfaba3c9a95d8c68e8dbaf1aba81cd219e2"
+      "bytes": 4224,
+      "sha256": "02809f51b292d51650c99fd121fbf86552b9f060797daf03f73713196608f1c4"
+    },
+    "deployment/源码发布说明.md": {
+      "bytes": 2990,
+      "sha256": "5a834e77d89ec15d49bd301a7b1e14204994e0172ad0a3b644c325d611b9295d"
     }
+  },
+  "publication": {
+    "repository": "https://github.com/suh52262-rgb/shiwu-zhitu",
+    "branch": "main",
+    "first_source_upload_commit": "3a1f9d34299507b6ecb45a2478f219f6d306ac91",
+    "date": "2026-10-16",
+    "source_code_origin_commit": "f1a99bacea6899d620fb76aab92e6df766a40167",
+    "private_worktree_history_published": false,
+    "local_offline_passed": 2501,
+    "local_services_passed": 27,
+    "remote_ci": "See Actions for the exact tested commit; not inferred from local tests",
+    "portability_fix": "Relative test paths and PowerShell Core test support; no business-code or model changes"
   }
 }
